@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --textColor: #000000;
+    --teamColor: #CA9575;
+    --backgroundColor: #F4F4F4;
+}
+
+/* Navbar section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+header.sticky {
+    padding: 10px 80px 1px 80px;
+    background-color: #fff;
+    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+}
+
+header .logo {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+}
+
+.nav__item a {
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.6s;
+}
+
+.nav__link {
+    padding: 10px;
+    color: #000000ee;
+    font-weight: 600;
+}
+
+.header__close,
+.header__toggle {
+    display: none;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000000;
+}
+
+.nav__list a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav__list a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--teamColor);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav__list a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* banner section css */
+
+
+/* media query starting */
+
+
+@media all and (max-width:900px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    header {
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    header.sticky .header__toggle {
+        display: inline;
+        color: #000000;
+        font-size: 24px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #000000;
+    }
+
+    .header__close:hover {
+        background-color: var(--teamColor);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--backgroundColor);
+        color: #000000ee;
+        width: 40%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+        z-index: 1000;
+    }
+
+    header.sticky {
+        padding: 10px 80px 15px 80px;
+        background-color: #fff;
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+
+    header .logo {
+        position: relative;
+        color: var(--textColor);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.6s;
+    }
+
+    .logo img {
+        height: 20px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item a {
+        color: #000000;
+    }
+
+    .nav__item {
+        margin: 2rem 0;
+    }
+
+    .nav__list a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav__list a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--teamColor);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    .logo img {
+        height: 15px;
+    }
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #ffffffee;
+        font-size: 26px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #000000;
+    }
+
+    .nav__item a {
+        color: #000000;
+    }
+
+    .header__close:hover {
+        background-color: var(--backgroundColor);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--backgroundColor);
+        color: #eeee;
+        width: 100%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 0%;
+        z-index: 1000;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item {
+        margin: 1.5rem 0;
+    }
+
+    header.sticky {
+        padding: 10px 35px 10px 35px;
+        background-color: #fff;
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+}
