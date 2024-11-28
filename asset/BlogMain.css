@@ -125,12 +125,12 @@ header.sticky ul li a {
     display: none;
 }
   
-.Contribute-btn i {
+.Contribute-btn i, .Contribute-btn-tab i {
     margin-right: 8px;
     transition: transform 0.3s ease;
 }
   
-.Contribute-btn:hover i {
+.Contribute-btn:hover i, .Contribute-btn-tab:hover i {
     transform: rotate(45deg);
 }
 
