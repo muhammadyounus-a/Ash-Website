@@ -106,7 +106,7 @@ header.sticky ul li a {
     color: #fff;
     border: 0px;
     transition: 0.3s;
-    border: 1px solid #000000;
+    border: 1px solid transparent;
 }
 
 .signUp-btn:hover {
@@ -122,10 +122,6 @@ header.sticky ul li a {
 }
 
 .Contribute-btn-tab {
-    display: none;
-}
-
-.signUp-btn-tab {
     display: none;
 }
   
@@ -270,11 +266,6 @@ header.sticky ul li a {
         font-size: 24px;
     }
 
-    .s-ion-icon {
-        height: 20px !important;
-        width: auto !important;
-    }
-
     header.sticky .header__toggle {
         display: inline;
         color: #ffffff;
@@ -382,8 +373,15 @@ header.sticky ul li a {
         padding: 4px 25px 4px 25px;
     }
 
-    .signUp-btn {
-        display: none;
+    /* footer section css */
+
+    .footer-section {
+        margin-top: 100px;
+        background-image: url('image/Blog/footer-bg-img.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100% !important;
+        width: 100% !important;
     }
 }
 
