@@ -137,6 +137,25 @@ header.sticky ul li a {
 
 /* banner section css */
 
+@media all and (min-width:1300px) { 
+    .container {
+        max-width: 1690px !important;
+    }
+}
+
+.banner-section {
+    margin-top: 200px;
+}
+
+.banner-section .container h1 {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.banner-section .container p {
+    color: var(--paragraph);
+}
+
 /* footer section css */
 
 .footer-section {
