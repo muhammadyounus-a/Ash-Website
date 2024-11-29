@@ -137,12 +137,6 @@ header.sticky ul li a {
 
 /* banner section css */
 
-@media all and (min-width:1300px) { 
-    .container {
-        max-width: 1690px !important;
-    }
-}
-
 .banner-section {
     margin-top: 200px;
 }
@@ -154,6 +148,15 @@ header.sticky ul li a {
 
 .banner-section .container p {
     color: var(--paragraph);
+}
+
+.banner-section .container .card {
+    background-color: transparent;
+    text-align: left;
+}
+
+.banner-section .container .card h3 {
+    color: #E3E3E3;
 }
 
 /* footer section css */
@@ -214,6 +217,11 @@ header.sticky ul li a {
 
 /* media query starting */
 
+@media all and (min-width:1300px) { 
+    .container {
+        max-width: 1680px !important;
+    }
+}
 
 @media all and (max-width:900px) {
 
