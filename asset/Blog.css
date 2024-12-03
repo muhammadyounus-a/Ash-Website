@@ -238,7 +238,7 @@ header.sticky ul li a {
     header {
         height: 48px;
         justify-content: space-between;
-        padding: 0 28px;
+        padding: 0 60px;
     }
 
     .header__toggle {
@@ -279,7 +279,7 @@ header.sticky ul li a {
     }
 
     header.sticky {
-        padding: 20px 40px 20px 40px;
+        padding: 20px 60px 20px 60px;
         background-color: #0C0C0C;
         box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
     }
@@ -347,9 +347,15 @@ header.sticky ul li a {
 
     .signUp-btn {
         position: absolute;
-        right: 54px;
+        right: 75px;
         top: 8px;
         padding: 4px 20px 4px 20px;
+    }
+
+    /* banner section */
+    
+    .banner-section {
+        margin-top: 150px;
     }
 
     /* footer section css */
