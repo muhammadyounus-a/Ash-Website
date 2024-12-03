@@ -463,6 +463,15 @@ header.sticky ul li a {
 
     /* banner section css */
 
+    .banner-section {
+        margin-top: 100px;
+    }
+
+    .banner-section .banner-img {
+        padding: 0px !important;
+        height: 100px !important;
+    }
+    
     /* footer section css */
 
     .footer-section {
@@ -481,7 +490,7 @@ header.sticky ul li a {
     }
 
     .footer-section .container {
-        padding: 60px 0px;
+        padding: 60px 5px;
     }
 
     .footer-nav {
@@ -496,10 +505,10 @@ header.sticky ul li a {
     }
 
     .footer-section .container ul li a{
-        color: #fff;
+        color: var(--paragraph);
         margin: 0 8px;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .copyright {
@@ -507,11 +516,15 @@ header.sticky ul li a {
         justify-content: space-between;
     }
 
+    .copyright p {
+        font-size: 12px;
+    }
+
     .copyright button {
         background-color: transparent;
-        border: 1px solid #ffff;
+        border: 1px solid var(--paragraph);
         color: #fff;
-        font-size: 14px;
+        font-size: 12px;
         padding: 5px 5px;
         margin: 0 5px;
     }
