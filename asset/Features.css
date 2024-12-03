@@ -8,8 +8,6 @@
 
 body {
     font-family: "Metrophobic", sans-serif;
-    background-color: #0C0C0C;
-    overflow-x: hidden;
 }
 
 :root {
@@ -38,7 +36,7 @@ header {
 
 header.sticky {
     padding: 15px 40px 15px 40px;
-    background-color: #000000;
+    background-color: #fff;
     box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
 }
 
@@ -71,14 +69,14 @@ header .logo {
     position: relative;
     margin: 0 35px;
     text-decoration: none;
-    color: #fff;
+    color: #1A1A1A;
     font-weight: 500;
     font-size: 18px;
     transition: 0.6s;
 }
 
 .nav__item a:hover {
-    color: #c5c5c5ee;
+    color: #494949ee;
 }
 
 .nav__link {
@@ -94,7 +92,7 @@ header .logo {
 
 header.sticky .logo,
 header.sticky ul li a {
-    color: #ffffff;
+    color: #1A1A1A;
 }
 
 .navBtn button {
@@ -104,22 +102,16 @@ header.sticky ul li a {
 
 .signUp-btn {
     background-color: transparent;
-    color: #fff;
-    border: 0px;
+    color: #1A1A1A;
+    border: 1px solid #1A1A1A;
     transition: 0.3s;
     padding: 0px;
-    /* border: 1px solid transparent; */
 }
 
-/* .signUp-btn:hover {
-    border: 1px solid #ffffff;
-    transform: 0.3s;
-} */
-
 .Contribute-btn {
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
+    background-color: #1A1A1A;
+    color: #fff;
+    border: 1px solid #1A1A1A;
     cursor: pointer;
 }
 
@@ -137,59 +129,66 @@ header.sticky ul li a {
 }
 
 /* banner section css */
+
 .banner-section {
     margin-top: 200px;
 }
 
-.banner-section .banner-img img {
-    height: 100% !important;
-    width: 100% !important;
-}
-
-.banner-section .container {
-    margin-top: 80px;
-}
-
-.banner-section .container h6 {
-    color: #6A6A6A;
-}
-
 .banner-section .container h1 {
-    color: #fff;
+    color: black;
+    margin-top: 40px;
+}
+
+.banner-section .container p span {
     font-weight: bold;
-    line-height: 55px;
 }
 
 .banner-section .container p {
-    color: var(--paragraph);
-    font-weight: 500;
-    line-height: 28px;
-    margin-top: 30px;
-    font-size: 20px;
+    color: #000000e0;
 }
 
-.banner-section .business-img img {
-    height: 100% !important;
-    width: 100% !important;
-    margin-top: 20px;
+.banner-section .container .card {
+    background-color: transparent;
+    text-align: left;
+    border: 0px;
 }
 
-.banner-section ul {
-    color: var(--paragraph);
-    margin: 0 0 0 40px;
-    font-size: 20px;
+.banner-section .container .card h3 {
+    color: #000;
+    font-size: 22px;
 }
 
-.banner-section a {
-    text-decoration: none;
+/* newBlog-section css */
+
+.newBlog-section {
+    margin-top: 100px;
+    background-color: #010102;
+    padding: 60px 0px;
+}
+
+.newBlog-section .container h3 {
     color: #fff;
-    margin-top: 20px;
+}
+
+.newBlog-section .container p {
+    color: #ffffffc5;
+}
+
+.newBlog-section .container .card {
+    background-color: transparent;
+    text-align: left;
+    border: 0px;
+}
+
+.newBlog-section .container .card h3 {
+    color: #fff;
+    font-size: 22px;
 }
 
 /* footer section css */
 
 .footer-section {
-    margin-top: 100px;
+    margin-top: 0px;
     background-image: url('image/BlogMain/footer-bg-img.webp');
     background-position: center;
     background-size: cover;
@@ -250,7 +249,6 @@ header.sticky ul li a {
     }
 }
 
-
 @media all and (max-width:900px) {
 
     /* navbar css */
@@ -265,18 +263,18 @@ header.sticky ul li a {
     header {
         height: 48px;
         justify-content: space-between;
-        padding: 0 28px;
+        padding: 0 60px;
     }
 
     .header__toggle {
         display: inline;
-        color: #fff;
+        color: #000;
         font-size: 24px;
     }
 
     header.sticky .header__toggle {
         display: inline;
-        color: #ffffff;
+        color: #000;
         font-size: 24px;
     }
 
@@ -306,8 +304,8 @@ header.sticky ul li a {
     }
 
     header.sticky {
-        padding: 20px 40px 20px 40px;
-        background-color: #0C0C0C;
+        padding: 20px 60px 20px 60px;
+        background-color: #fff;
         box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
     }
 
@@ -374,15 +372,26 @@ header.sticky ul li a {
 
     .signUp-btn {
         position: absolute;
-        right: 54px;
+        right: 90px;
         top: 8px;
         padding: 4px 20px 4px 20px;
     }
 
+    /* banner section css */
+
+    .banner-section {
+        margin-top: 100px;
+    }
+
+    .banner-section .banner-img {
+        height: 150px;
+    }
+
+
     /* footer section css */
 
     .footer-section {
-        margin-top: 100px;
+        margin-top: 0px;
         background-image: url('image/BlogMain/footer-bg-img.webp');
         background-position: center;
         background-size: cover;
@@ -418,7 +427,7 @@ header.sticky ul li a {
 
     .header__toggle {
         display: inline;
-        color: #ffffffee;
+        color: #000;
         font-size: 26px;
     }
 
@@ -434,10 +443,6 @@ header.sticky ul li a {
 
     .nav__item a {
         color: #ffffff;
-    }
-
-    .header__close:hover {
-        background-color: var(--backgroundColor);
     }
 
     .nav {
@@ -471,13 +476,13 @@ header.sticky ul li a {
 
     header.sticky {
         padding: 10px 20px 10px 20px;
-        background-color: #0C0C0C;
+        background-color: #fff;
         box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
     }
 
     .signUp-btn {
         position: absolute;
-        right: 40px;
+        right: 50px;
         top: 8px;
         padding: 4px 15px 4px 15px;
     }
@@ -488,50 +493,20 @@ header.sticky ul li a {
         margin-top: 100px;
     }
 
-    .banner-section .container {
-        margin-top: 40px;
-        padding: 0px 10px 0px 10px;
+    .banner-section .banner-img {
+        padding: 0px !important;
     }
 
-    .banner-section .container h1 {
-        color: #fff;
-        font-weight: bold;
-        line-height: 38px;
-    }
+    /* newBlog-section css */
 
-    .banner-section .container p {
-        color: var(--paragraph);
-        font-weight: 500;
-        line-height: 28px;
-        margin-top: 10px;
-        font-size: 18px;
-        text-align: justify;
+    .newBlog-section {
+        margin-top: 0px;
     }
-
-    .banner-section .business-img img {
-        height: 100% !important;
-        width: 100% !important;
-        margin-top: 10px;
-    }
-
-    .banner-section ul {
-        color: var(--paragraph);
-        margin: 0;
-        font-size: 18px;
-        text-align: justify;
-        padding: 0px 20px 0px 30px;
-    }
-
-    .banner-section a {
-        text-decoration: none;
-        color: #fff;
-        margin-top: 20px;
-    }
-
+    
     /* footer section css */
 
     .footer-section {
-        margin-top: 100px;
+        margin-top: 0px;
         background-image: url('image/BlogMain/footer-bg-img.webp');
         background-position: center;
         background-size: cover;
