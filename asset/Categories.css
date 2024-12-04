@@ -175,14 +175,15 @@ header.sticky ul li a {
 
 .input-box {
     display: flex;
+    width: 81.7%; 
 }
 
 .input-box input {
-    width: 70% !important;
     border: 1px solid #00000091;
     outline: #00000091;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: transparent;
+    width: 100%; 
 }
 
 .input-box button {
@@ -190,6 +191,7 @@ header.sticky ul li a {
     background-color: #000;
     color: #fff;
     border: 1px solid #000;
+    white-space: nowrap; 
 }
 
 /* footer section css */
