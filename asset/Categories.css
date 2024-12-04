@@ -135,11 +135,12 @@ header.sticky ul li a {
 /* banner section css */
 
 .banner-section {
-    height: 100vh;
+    height: 90vh;
     background-color: #F8F8F8;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .banner-section .container h1 {
@@ -209,7 +210,7 @@ header.sticky ul li a {
 
 .categories {
     border: 1px solid #00000091;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 0px;
     transition: 0.3s;
 }
@@ -222,10 +223,33 @@ header.sticky ul li a {
 
 /* design-section css */
 
+.design-section {
+    margin-top: 30px;
+}
+
+.main-design {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.design {
+    border: 1px solid #00000091;
+    border-radius: 0px;
+    padding: 15px 15px 10px 15px;
+    width: 370px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* footer section css */
 
 .footer-section {
-    margin-top: 0px;
+    margin-top: 100px;
     background-image: url('image/BlogMain/footer-bg-img.webp');
     background-position: center;
     background-size: cover;
