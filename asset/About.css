@@ -545,70 +545,34 @@ header.sticky ul li a {
     }
 
     /* banner section css */
-    
+
     .banner-section {
-        margin-top: 200px;
-    }
-    
-    .banner-section .container h1 {
-        color: black;
-        margin-top: 40px;
-    }
-    
-    .banner-section .container p span {
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-    }
-    
-    .banner-section .container p {
-        color: #000000b9;
-        font-family: "Inter", sans-serif;
-    }
-    
-    .banner-section .container .card { 
-        background-color: #F7F7F7;
-        border: 0px;
+        margin-top: 100px;
     }
     
     .banner-section .container .card {
         border-radius: 0px;
-        padding: 20px;
+        padding: 10px;
     }
     
     .datas-area {
-        margin-top: 80px;
-    }
-    
-    .mission h2 {
-        color: #fff;
-        font-weight: 300;
-    }
-    
-    .mission p {
-        font-family: "Inter", sans-serif;
-        color: #efefefb2 !important;
-    }
-    
-    .vission h2 {
-        color: #000;
-        font-weight: 300;
-    }
-    
-    .vission p {
-        font-family: "Inter", sans-serif;
-        color: #000 !important;
+        margin-top: 40px;
     }
     
     /* brand-section css */
     
     .brand-section {
-        margin-top: 80px;
+        margin-top: 60px;
     }
     
     .brand-main {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .brand-img {
+        width: 150px;
     }
     
     /* newBlog-section css */
