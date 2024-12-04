@@ -173,6 +173,25 @@ header.sticky ul li a {
     color: #000;
 }
 
+.input-box {
+    display: flex;
+}
+
+.input-box input {
+    width: 70% !important;
+    border: 1px solid #00000091;
+    outline: #00000091;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.input-box button {
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
 /* footer section css */
 
 .footer-section {
