@@ -420,6 +420,31 @@ header.sticky ul li a {
 
     /* banner section css */
 
+    .banner-section {
+        margin-top: 100px;
+    }
+
+    .banner-section .banner-img {
+        height: 150px;
+    }
+    
+    .datas-area {
+        margin-top: 40px;
+    }
+    
+    /* brand-section css */
+    
+    .brand-section {
+        margin-top: 50px;
+    }
+    
+    .brand-main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
     /* footer section css */
 
     .footer-section {
