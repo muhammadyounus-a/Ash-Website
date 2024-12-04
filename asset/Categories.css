@@ -32,8 +32,9 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 30px 40px 30px 40px;
+    padding: 20px 40px 20px 40px;
     z-index: 1000;
+    background-color: #fff;
 }
 
 header.sticky {
@@ -75,6 +76,7 @@ header .logo {
     font-weight: 500;
     font-size: 18px;
     transition: 0.6s;
+    font-family: "Inter", sans-serif;
 }
 
 .nav__item a:hover {
@@ -133,96 +135,18 @@ header.sticky ul li a {
 /* banner section css */
 
 .banner-section {
-    margin-top: 200px;
+    height: 100vh;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-section .container h1 {
-    color: black;
-    margin-top: 40px;
-}
-
-.banner-section .container p span {
-    font-weight: bold;
-    font-family: "Inter", sans-serif;
-}
-
-.banner-section .container p {
-    color: #000000b9;
-    font-family: "Inter", sans-serif;
-}
-
-.banner-section .container .card { 
-    background-color: #F7F7F7;
-    border: 0px;
-}
-
-.banner-section .container .card {
-    border-radius: 0px;
-    padding: 20px;
-}
-
-.datas-area {
-    margin-top: 80px;
-}
-
-.mission h2 {
-    color: #fff;
-    font-weight: 300;
-}
-
-.mission p {
-    font-family: "Inter", sans-serif;
-    color: #efefefb2 !important;
-}
-
-.vission h2 {
-    color: #000;
-    font-weight: 300;
-}
-
-.vission p {
-    font-family: "Inter", sans-serif;
-    color: #000 !important;
-}
-
-/* brand-section css */
-
-.brand-section {
-    margin-top: 80px;
-}
-
-.brand-main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/* newBlog-section css */
-
-.newBlog-section {
-    margin-top: 100px;
-    background-color: #010102;
-    padding: 60px 0px;
-}
-
-.newBlog-section .container h3 {
-    color: #fff;
-}
-
-.newBlog-section .container p {
-    color: #ffffffc5;
-    font-family: "Inter", sans-serif;
-}
-
-.newBlog-section .container .card {
-    background-color: transparent;
-    text-align: left;
-    border: 0px;
-}
-
-.newBlog-section .container .card h3 {
-    color: #fff;
-    font-size: 22px;
+    text-align: center; 
+    color: black; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 500; 
 }
 
 /* footer section css */
@@ -420,31 +344,6 @@ header.sticky ul li a {
 
     /* banner section css */
 
-    .banner-section {
-        margin-top: 100px;
-    }
-
-    .banner-section .banner-img {
-        height: 150px;
-    }
-    
-    .datas-area {
-        margin-top: 40px;
-    }
-    
-    /* brand-section css */
-    
-    .brand-section {
-        margin-top: 50px;
-    }
-    
-    .brand-main {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
     /* footer section css */
 
     .footer-section {
@@ -545,63 +444,6 @@ header.sticky ul li a {
     }
 
     /* banner section css */
-
-    .banner-section {
-        margin-top: 100px;
-    }
-    
-    .banner-section .container .card {
-        border-radius: 0px;
-        padding: 10px;
-    }
-    
-    .datas-area {
-        margin-top: 40px;
-    }
-    
-    /* brand-section css */
-    
-    .brand-section {
-        margin-top: 60px;
-    }
-    
-    .brand-main {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .brand-img {
-        width: 150px;
-    }
-    
-    /* newBlog-section css */
-    
-    .newBlog-section {
-        margin-top: 100px;
-        background-color: #010102;
-        padding: 60px 0px;
-    }
-    
-    .newBlog-section .container h3 {
-        color: #fff;
-    }
-    
-    .newBlog-section .container p {
-        color: #ffffffc5;
-        font-family: "Inter", sans-serif;
-    }
-    
-    .newBlog-section .container .card {
-        background-color: transparent;
-        text-align: left;
-        border: 0px;
-    }
-    
-    .newBlog-section .container .card h3 {
-        color: #fff;
-        font-size: 22px;
-    }
     
     /* footer section css */
 
