@@ -245,6 +245,11 @@ header.sticky ul li a {
     justify-content: space-between;
 }
 
+/* ai-section css */
+
+.ai-section {
+    margin-top: 100px;
+}
 
 /* footer section css */
 
