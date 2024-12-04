@@ -151,6 +151,16 @@ header.sticky ul li a {
     font-family: "Inter", sans-serif;
 }
 
+.banner-section .container .card { 
+    background-color: #F7F7F7;
+    border: 0px;
+}
+
+.banner-section .container .card {
+    border-radius: 0px;
+    padding: 20px;
+}
+
 /* newBlog-section css */
 
 .newBlog-section {
