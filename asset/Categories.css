@@ -149,6 +149,30 @@ header.sticky ul li a {
     font-weight: 500; 
 }
 
+.box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-card {
+    border: 1px solid #00000091;
+    border-radius: 0px;
+    padding: 6px 10px 0px 10px;
+    width: 40%;
+}
+
+.box-card p {
+    color: #00000091;
+}
+
+.box-card p span {
+    font-weight: 600;
+    color: #000;
+}
+
 /* footer section css */
 
 .footer-section {
