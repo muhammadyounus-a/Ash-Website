@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +9,7 @@
 
 body {
     font-family: "Metrophobic", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -141,10 +143,12 @@ header.sticky ul li a {
 
 .banner-section .container p span {
     font-weight: bold;
+    font-family: "Inter", sans-serif;
 }
 
 .banner-section .container p {
     color: #000000e0;
+    font-family: "Inter", sans-serif;
 }
 
 .banner-section .container .card {
@@ -172,6 +176,7 @@ header.sticky ul li a {
 
 .newBlog-section .container p {
     color: #ffffffc5;
+    font-family: "Inter", sans-serif;
 }
 
 .newBlog-section .container .card {
@@ -230,6 +235,7 @@ header.sticky ul li a {
 
 .copyright p {
     color: var(--paragraph);
+    font-family: "Inter", sans-serif;
 }
 
 .copyright button {

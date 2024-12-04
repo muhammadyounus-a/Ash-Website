@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +9,7 @@
 
 body {
     font-family: "Metrophobic", sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #0C0C0C;
     overflow-x: hidden;
 }
@@ -166,6 +168,7 @@ header.sticky ul li a {
     line-height: 28px;
     margin-top: 30px;
     font-size: 20px;
+    font-family: "Inter", sans-serif;
 }
 
 .banner-section .business-img img {
@@ -231,6 +234,7 @@ header.sticky ul li a {
 
 .copyright p {
     color: var(--paragraph);
+    font-family: "Inter", sans-serif;
 }
 
 .copyright button {
