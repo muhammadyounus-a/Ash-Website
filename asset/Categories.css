@@ -251,6 +251,10 @@ header.sticky ul li a {
     margin-top: 100px;
 }
 
+.ai-section p {
+    color: #000000a9;
+}
+
 /* footer section css */
 
 .footer-section {
