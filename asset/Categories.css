@@ -194,6 +194,34 @@ header.sticky ul li a {
     white-space: nowrap; 
 }
 
+/* categories-section css */
+
+.categories-section {
+    margin-top: 100px;
+}
+
+.main-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.categories {
+    border: 1px solid #00000091;
+    padding: 5px 15px;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
+.categories:hover {
+    background-color: #000;
+    color: #fff;
+    transform: 0.3s;
+}
+
+/* design-section css */
+
 /* footer section css */
 
 .footer-section {
