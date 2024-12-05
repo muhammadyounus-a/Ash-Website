@@ -245,6 +245,10 @@ header.sticky ul li a {
     justify-content: space-between;
 }
 
+.design h5 {
+    font-weight: 300;
+}
+
 /* ai-section css */
 
 .ai-section {
@@ -253,6 +257,14 @@ header.sticky ul li a {
 
 .ai-section p {
     color: #000000a9;
+}
+
+.border-line {
+    border: 1px solid #000000a9;
+}
+
+.bg-gray {
+    background-color: #A2A2A2;
 }
 
 /* footer section css */
