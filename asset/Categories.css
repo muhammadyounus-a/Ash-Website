@@ -520,34 +520,27 @@ header.sticky ul li a {
     /* banner section css */
 
 .banner-section {
-    height: 90vh;
+    height: 50vh;
     background-color: #F8F8F8;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-}
-
-.banner-section .container h1 {
-    text-align: center; 
-    color: black; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 500; 
+    margin-top: 0px;
 }
 
 .box {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .box-card {
     border: 1px solid #00000091;
     border-radius: 0px;
     padding: 6px 10px 0px 10px;
-    width: 40%;
+    width: 49%;
 }
 
 .box-card p {
@@ -561,7 +554,7 @@ header.sticky ul li a {
 
 .input-box {
     display: flex;
-    width: 81.7%; 
+    width: 100%; 
 }
 
 .input-box input {
