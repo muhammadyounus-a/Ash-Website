@@ -543,73 +543,28 @@ header.sticky ul li a {
     width: 49%;
 }
 
-.box-card p {
-    color: #00000091;
-}
-
-.box-card p span {
-    font-weight: 600;
-    color: #000;
-}
-
 .input-box {
     display: flex;
     width: 100%; 
 }
 
-.input-box input {
-    border: 1px solid #00000091;
-    outline: #00000091;
-    padding: 15px 20px;
-    background-color: transparent;
-    width: 100%; 
-}
-
-.input-box button {
-    padding: 10px 30px;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    white-space: nowrap; 
-}
-
 /* categories-section css */
 
 .categories-section {
-    margin-top: 100px;
-}
-
-.main-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-family: "Inter", sans-serif;
-}
-
-.categories {
-    border: 1px solid #00000091;
-    padding: 10px 15px;
-    border-radius: 0px;
-    transition: 0.3s;
-}
-
-.categories:hover {
-    background-color: #000;
-    color: #fff;
-    transform: 0.3s;
+    margin-top: 70px;
 }
 
 /* design-section css */
 
 .design-section {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .main-design {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8px 0px; 
     font-family: "Inter", sans-serif;
 }
 
@@ -617,70 +572,22 @@ header.sticky ul li a {
     border: 1px solid #00000091;
     border-radius: 0px;
     padding: 15px 15px 10px 15px;
-    width: 370px;
+    width: 49%;
     transition: 0.3s;
     display: flex;
     justify-content: space-between;
 }
 
-.design h5 {
-    font-weight: 300;
-}
-
 /* ai-section css */
 
 .ai-section {
-    margin-top: 100px;
-}
-
-.ai-section p {
-    color: #000000a9;
-}
-
-.border-line {
-    border: 1px solid #CDCDCD;
+    margin-top: 80px;
 }
 
 .bg-gray {
     background-color: rgba(0, 0, 0, 0.04);
     padding: 30px 0px;
-}
-
-.bg-team {
-    background-color: #F8F8F8;
-    padding: 40px 30px;
-} 
-
-.dog-img {
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4px;
-    background-color: rgba(0, 0, 0, 0.04);
-}
-
-.bg-team h4 {
-    color: rgba(0, 0, 0, 0.80);
-}
-
-.hashTags {
-    height: 40px;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px 5px 20px;
-    background-color: rgba(0, 0, 0, 0.04);
-}
-
-.getTeach-btn button {
-    padding: 10px 30px;
-    border: 0px;
-    background-color: #000000;
-    color: #fff;
-    font-weight: 300;
+    height: 15vh;
 }
 
 /* contribution-section css */
