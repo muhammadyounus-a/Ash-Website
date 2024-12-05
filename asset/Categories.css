@@ -519,100 +519,104 @@ header.sticky ul li a {
 
     /* banner section css */
 
-.banner-section {
-    height: 50vh;
-    background-color: #F8F8F8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0px;
-}
+    .banner-section {
+        height: 50vh;
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
 
-.box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-.box-card {
-    border: 1px solid #00000091;
-    border-radius: 0px;
-    padding: 6px 10px 0px 10px;
-    width: 49%;
-}
+    .box-card {
+        border: 1px solid #00000091;
+        border-radius: 0px;
+        padding: 6px 10px 0px 10px;
+        width: 49%;
+    }
 
-.input-box {
-    display: flex;
-    width: 100%; 
-}
+    .input-box {
+        display: flex;
+        width: 100%; 
+    }
 
-/* categories-section css */
+    /* categories-section css */
 
-.categories-section {
-    margin-top: 70px;
-}
+    .categories-section {
+        margin-top: 70px;
+    }
 
-/* design-section css */
+    /* design-section css */
 
-.design-section {
-    margin-top: 20px;
-}
+    .design-section {
+        margin-top: 20px;
+    }
 
-.main-design {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px 0px; 
-    font-family: "Inter", sans-serif;
-}
+    .main-design {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px 0px; 
+        font-family: "Inter", sans-serif;
+    }
 
-.design {
-    border: 1px solid #00000091;
-    border-radius: 0px;
-    padding: 15px 15px 10px 15px;
-    width: 49%;
-    transition: 0.3s;
-    display: flex;
-    justify-content: space-between;
-}
+    .design {
+        border: 1px solid #00000091;
+        border-radius: 0px;
+        padding: 15px 15px 10px 15px;
+        width: 49%;
+        transition: 0.3s;
+        display: flex;
+        justify-content: space-between;
+    }
 
-/* ai-section css */
+    /* ai-section css */
 
-.ai-section {
-    margin-top: 80px;
-}
+    .ai-section {
+        margin-top: 80px;
+    }
 
-.bg-gray {
-    background-color: rgba(0, 0, 0, 0.04);
-    padding: 30px 0px;
-    height: 15vh;
-}
+    .bg-gray {
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px 0px;
+        height: 15vh;
+    }
 
-/* contribution-section css */
+    /* contribution-section css */
 
-.contribution-section {
-    margin-top: 100px;
-}
+    .contribution-section {
+        margin-top: 80px;
+    }
 
-.contribution-section .container {
-    background-image: url('image/Categories/contribute-img.webp');
-    background-position: center;
-    background-size: cover;
-    height: 100% !important;
-    width: 100% !important;
-    padding: 100px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
+    .contribution-section .container br {
+        display: none;
+    }
+
+    .contribution-section .container {
+        background-image: url('image/Categories/contribute-img.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100% !important;
+        width: 100% !important;
+        padding: 30px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
 
     /* footer section css */
 
     .footer-section {
-        margin-top: 0px;
+        margin-top: 80px;
         background-image: url('image/BlogMain/footer-bg-img.webp');
         background-position: center;
         background-size: cover;
@@ -630,6 +634,7 @@ header.sticky ul li a {
     /* navbar css */
     body {
         overflow-x: hidden;
+        text-align: justify;
     }
 
     body.overflow-hidden {
@@ -709,11 +714,139 @@ header.sticky ul li a {
     }
 
     /* banner section css */
+
+    .banner-section {
+        height: 100vh;
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .box-card {
+        border: 1px solid #00000091;
+        border-radius: 0px;
+        padding: 6px 10px 0px 10px;
+        width: 100%;
+    }
+
+    .input-box {
+        display: flex;
+        width: 100%; 
+    }
+
+    .input-box input {
+        border: 1px solid #00000091;
+        outline: #00000091;
+        padding: 15px 20px;
+        background-color: transparent;
+        width: 100%; 
+    }
+
+    /* categories-section css */
+
+    .categories-section {
+        margin-top: 60px;
+    }
+
+    .main-categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .categories {
+        border: 1px solid #00000091;
+        padding: 2px 7px;
+        border-radius: 0px;
+        transition: 0.3s;
+    }
+
+    /* design-section css */
+
+    .design-section {
+        margin-top: 30px;
+    }
+
+    .main-design {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .design {
+        border: 1px solid #00000091;
+        border-radius: 0px;
+        padding: 15px 15px 10px 15px;
+        width: 100%;
+        transition: 0.3s;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ai-section css */
+
+    .ai-section {
+        margin-top: 60px;
+    }
+
+    .bg-gray {
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px 0px;
+        height: 25vh;
+    }
+
+    .bg-team {
+        background-color: #F8F8F8;
+        padding: 40px 10px;
+    } 
+
+    .hashTags {
+        height: 40px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px 0px 10px;
+        background-color: rgba(0, 0, 0, 0.04);
+        font-size: 12px;
+    }
+
+    /* contribution-section css */
+
+    .contribution-section {
+        margin-top: 60px;
+    }
+
+    .contribution-section .container {
+        background-image: url('image/Categories/contribute-img.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100% !important;
+        width: 100% !important;
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
     
     /* footer section css */
 
     .footer-section {
-        margin-top: 0px;
+        margin-top: 60px;
         background-image: url('image/BlogMain/footer-bg-img.webp');
         background-position: center;
         background-size: cover;
