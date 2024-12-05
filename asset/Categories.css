@@ -260,11 +260,12 @@ header.sticky ul li a {
 }
 
 .border-line {
-    border: 1px solid #000000a9;
+    border: 1px solid #CDCDCD;
 }
 
 .bg-gray {
-    background-color: #A2A2A2;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 30px 0px;
 }
 
 /* footer section css */
