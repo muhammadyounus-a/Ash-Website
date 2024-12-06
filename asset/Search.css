@@ -234,34 +234,25 @@ header.sticky ul li a {
     color: #000 !important;
 }
 
+.all-items .nav-items ul li .nav-line {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
 .all-items .nav-items ul li a {
     color: rgba(0, 0, 0, 0.50);
 }
 
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.dropdown button {
+    background: #FEFEFE; 
+    border: 1px rgba(0, 0, 0, 0.10) solid;
+    text-transform: uppercase;
+    font-size: 16px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    padding: 5px 20px;
 }
-  
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.show {display: block;}
 
 /* contribution-section css */
 
