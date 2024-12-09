@@ -204,6 +204,7 @@ header.sticky ul li a {
 .all-items .all-items-data {
     display: flex;
     justify-content: space-between;
+    padding: 0px;
 }
 
 .all-items .filter-btn button {
@@ -252,6 +253,46 @@ header.sticky ul li a {
     font-family: "Inter", sans-serif; 
     font-weight: 400;
     padding: 5px 20px;
+}
+
+/* uiUx-section css */
+
+.uiUx-section {
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+}
+
+.uiUx-text {
+    color: rgba(0, 0, 0, 0.80); 
+    font-size: 32px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 600; 
+    text-transform: uppercase;
+    border-right: 2px solid black;
+    width: fit-content;
+    padding: 0px 10px 0px 0px;
+    width: 140px;
+}
+
+.uiUx-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.uiUx-items::-webkit-scrollbar {
+    display: none;
+}
+.uiUx-datas {
+    margin: 0 5px;
+    border: 0.7px rgba(0, 0, 0, 0.30) solid;
+    padding: 5px;
+    white-space: nowrap;
 }
 
 /* contribution-section css */
