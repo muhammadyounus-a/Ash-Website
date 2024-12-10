@@ -18,7 +18,7 @@ body {
 }
 
 a {
-    text-decoration: none !important;
+    text-decoration: none !important;   
 }
 
 /* Navbar section */
@@ -307,6 +307,7 @@ header.sticky ul li a {
 .uiUx-items::-webkit-scrollbar {
     display: none;
 }
+
 .uiUx-datas {
     margin: 0 5px;
     border: 0.7px rgba(0, 0, 0, 0.30) solid;
@@ -647,6 +648,96 @@ header.sticky ul li a {
         display: flex;
         width: 100%; 
     }
+    /* all-items css */
+
+    .all-items {
+        margin-top: 80px;
+    }
+
+    .all-items .filter-btn button {
+        color: rgba(0, 0, 0, 0.90); 
+        font-size: 12px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+        padding: 5px 5px;
+        background: #F8F8F8; 
+        border: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .all-items .nav-items ul li {
+        margin: 0 10px;
+        color: black;
+        font-size: 12px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400; 
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    /* uiUx-section css */
+
+    .uiUx-text {
+        color: rgba(0, 0, 0, 0.80); 
+        font-size: 28px; 
+        font-family: "Metrophobic", sans-serif; 
+        font-weight: 600; 
+        text-transform: uppercase;
+        border-right: 2px solid black;
+        width: fit-content;
+        padding: 0px 10px 0px 0px;
+        width: 140px;
+    }
+
+    /* items-parent-1 css */
+
+    .section .items-child {
+        border: 1px #F0F0F0 solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 49%;
+        height: 140px;
+    }
+
+    .section .items-child-datas {
+        padding: 5px 5px 5px 15px;
+    }
+
+    .section .items-child-img {
+        background-color: #F0F0F0;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px; 
+        height: 100%;
+    }
+
+    .section .items-child-img img {
+        width: 72px; 
+        height: 70px;
+    }
+
+    .section .items-child h4 {
+        color: rgba(0, 0, 0, 0.90); 
+        font-size: 16px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 500;
+    }
+
+    .section .items-child h6 {
+        color: rgba(0, 0, 0, 0.70); 
+        font-size: 14px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+    }
+
+    .section .items-child p { 
+        color: rgba(0, 0, 0, 0.50);
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+        font-size: 12px;
+    }
 
     /* contribution-section css */
 
@@ -808,6 +899,78 @@ header.sticky ul li a {
         padding: 15px 20px;
         background-color: transparent;
         width: 100%; 
+    }
+
+    /* all-items css */
+
+    .all-items {
+        margin-top: 60px;
+    }
+
+    .all-items .filter-btn button {
+        color: rgba(0, 0, 0, 0.90); 
+        font-size: 12px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+        padding: 15px 15px;
+        background: #F8F8F8; 
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        width: 100px;
+    }
+
+    .nav-items {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
+
+    .nav-items::-webkit-scrollbar {
+        display: none;
+    }
+
+    .all-items .nav-items ul li {
+        margin: 0 10px;
+        color: black;
+        font-size: 14px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400; 
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .dropdown button {
+        display: none;
+    }
+
+    /* uiUx-section css */
+
+    .uiUx-text {
+        color: rgba(0, 0, 0, 0.80); 
+        font-size: 22px; 
+        font-family: "Metrophobic", sans-serif; 
+        font-weight: 600; 
+        text-transform: uppercase;
+        border-right: 2px solid black;
+        width: fit-content;
+        padding: 0px 5px 0px 5px;
+        width: 120px;
+    }
+
+    /* items-parent-1 css */
+
+    .section .items-child {
+        border: 1px #F0F0F0 solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 140px;
     }
 
     /* contribution-section css */
