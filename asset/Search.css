@@ -217,9 +217,15 @@ header.sticky ul li a {
     border: 1px solid rgba(0, 0, 0, 0.10);
 }
 
+.nav-items {
+    position: relative;
+}
+
 .all-items .nav-items ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .all-items .nav-items ul li {
@@ -229,20 +235,33 @@ header.sticky ul li a {
     font-family: "Inter", sans-serif; 
     font-weight: 400; 
     text-transform: uppercase;
+    position: relative;
 }
 
 .all-items .nav-items ul li .active {
     color: #000 !important;
+    position: relative !important;
+    left: 0px !important;
 }
 
 .all-items .nav-items ul li .nav-line {
     height: 3px;
     width: 100%;
     background-color: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .all-items .nav-items ul li a {
     color: rgba(0, 0, 0, 0.50);
+}
+
+.nav-items a.active + .nav-line {
+    visibility: visible;
+    position: relative;
+    left: 0px !important;
 }
 
 .dropdown button {
@@ -295,34 +314,34 @@ header.sticky ul li a {
     white-space: nowrap;
 }
 
-/* items-parent css */
+/* items-parent-1 css */
 
-.items-parent {
+.section {
     padding: 0px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.premium {
+.section .premium {
     padding: 5px 10px;
     background-color: #F0F0F0;
 }
 
-.items-child {
+.section .items-child {
     border: 1px #F0F0F0 solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 550px;
-    height: 150px;
+    height: 140px;
 }
 
-.items-child-datas {
+.section .items-child-datas {
     padding: 15px 15px 5px 15px;
 }
 
-.items-child-img {
+.section .items-child-img {
     background-color: #F0F0F0;
     padding: 10px 10px;
     display: flex;
@@ -332,29 +351,34 @@ header.sticky ul li a {
     height: 100%;
 }
 
-.items-child-img img {
+.section .items-child-img img {
     width: 72px; 
     height: 70px;
 }
 
-.items-child h4 {
+.section .items-child h4 {
     color: rgba(0, 0, 0, 0.90); 
     font-size: 18px; 
     font-family: "Inter", sans-serif; 
     font-weight: 500;
 }
 
-.items-child h6 {
+.section .items-child h6 {
     color: rgba(0, 0, 0, 0.70); 
     font-size: 14px; 
     font-family: "Inter", sans-serif; 
     font-weight: 400;
 }
 
-.items-child p { 
+.section .items-child p { 
     color: rgba(0, 0, 0, 0.50);
     font-family: "Inter", sans-serif; 
     font-weight: 400;
+}
+
+.active-section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .see-more {
