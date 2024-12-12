@@ -379,29 +379,42 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
-
-            // Number of slides to show
             slidesPerView: 3.5,
-
-            // If we need pagination
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-
-            // Navigation arrows
             navigation: {
                 nextEl: false,
                 prevEl: '.swiper-button-prev',
             },
-
-            // And if we need scrollbar
             scrollbar: {
                 el: '.swiper-scrollbar',
                 draggable: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 15,
+                },
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1400: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                },
             },
         });
 

@@ -242,6 +242,16 @@ header.sticky ul li a {
     display: none !important;
 }
 
+.swiper-pagination-bullet {
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 0px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
 /* ai-section css */
 
 .ai-section {
