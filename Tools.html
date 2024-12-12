@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <!-- swiper section -->
-                    <div class="swiper">
+                    <div class="swiper mt-5">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                           <!-- Slides -->
@@ -219,15 +219,63 @@
                                 </div>
                             </div>
                           </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 26rem;background: #FAFAFA; border: 1px #E4E4E4 solid;border-radius: 0px;">
+                                <div class="card-body">
+                                    <p style="color: #8C8C8C;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                    <h4 class="mt-4">Mary Hilll</h4>
+                                    <div class="d-flex mt-2">
+                                        <div class="">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span style="color:#D9D9D9;" class="fa fa-star"></span>
+                                        </div>
+                                        <p class="text-black ms-3">4 Rating</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 26rem;background: #FAFAFA; border: 1px #E4E4E4 solid;border-radius: 0px;">
+                                <div class="card-body">
+                                    <p style="color: #8C8C8C;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                    <h4 class="mt-4">Mary Hilll</h4>
+                                    <div class="d-flex mt-2">
+                                        <div class="">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span style="color:#D9D9D9;" class="fa fa-star"></span>
+                                        </div>
+                                        <p class="text-black ms-3">4 Rating</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 26rem;background: #FAFAFA; border: 1px #E4E4E4 solid;border-radius: 0px;">
+                                <div class="card-body">
+                                    <p style="color: #8C8C8C;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                    <h4 class="mt-4">Mary Hilll</h4>
+                                    <div class="d-flex mt-2">
+                                        <div class="">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span style="color:#D9D9D9;" class="fa fa-star"></span>
+                                        </div>
+                                        <p class="text-black ms-3">4 Rating</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
-                      
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      
-                        <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
                       </div>
                 </div>
@@ -331,26 +379,32 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+            // Number of slides to show
+            slidesPerView: 3.5,
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
+            // Navigation arrows
+            navigation: {
+                nextEl: false,
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: false,
+            },
         });
+
     </script>
 </body>
 
