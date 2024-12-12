@@ -190,6 +190,31 @@ header.sticky ul li a {
     background-color: rgba(0, 0, 0, 0.04);
 }
 
+/* review section */ 
+
+.review-section {
+    margin-top: 100px;
+    padding: 0;
+}
+
+.review-section h6 {
+    color: rgba(0, 0, 0, 0.90); 
+    font-size: 22px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 500; 
+    text-transform: uppercase;
+}
+
+.review-section h3 {
+    color: black;
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 500;
+}
+
+.review-section .checked {
+    color: orange;
+  }
+
 /* ai-section css */
 
 .ai-section {
