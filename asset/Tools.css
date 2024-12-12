@@ -233,6 +233,11 @@ header.sticky ul li a {
     height: 50px !important;
 }
 
+.review-section .swiper {
+    width: 100%;
+    height: 600px;
+}
+
 /* ai-section css */
 
 .ai-section {
