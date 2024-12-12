@@ -212,8 +212,26 @@ header.sticky ul li a {
 }
 
 .review-section .checked {
-    color: orange;
-  }
+    color: #F5841F;
+}
+
+.review-section .rating {
+    display: flex;
+    gap: 20px;
+}
+
+.rating-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-section .write-btn button{
+    padding: 10px 30px;  
+    background-color: #030303;
+    color: #fff;
+    border: 0px;
+    height: 50px !important;
+}
 
 /* ai-section css */
 
