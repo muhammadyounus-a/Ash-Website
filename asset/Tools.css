@@ -898,22 +898,30 @@ header.sticky ul li a {
         color: #fff;
         border: 0px;
         height: 50px !important;
+        width: 80%;
+        margin-top: 10px;
     }
     
     .banner-section .upload-btn {
         padding: 10px 15px;  
         border: 1px rgba(0, 0, 0, 0.30) solid;
         height: 50px !important;
+        width: 20%;
+        margin-top: 10px;
     }
     
     .banner-section .heading {
         display: block;
         padding: 0px;
     }
+
+    .banner-section .heading p {
+        font-size: 14px;
+    }
     
     .banner-section .all-items {
         display: flex;
-        gap: 15px;
+        gap: 10px;
         flex-wrap: wrap;
         padding: 0px;
     }
@@ -924,20 +932,20 @@ header.sticky ul li a {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px 20px 5px 20px;
+        padding: 20px 10px 5px 10px;
         background-color: rgba(0, 0, 0, 0.04);
     }
     
     /* review section */ 
     
     .review-section {
-        margin-top: 100px;
+        margin-top: 40px;
         padding: 0;
     }
     
     .review-section h6 {
         color: rgba(0, 0, 0, 0.90); 
-        font-size: 22px; 
+        font-size: 20px; 
         font-family: "Metrophobic", sans-serif; 
         font-weight: 500; 
         text-transform: uppercase;
@@ -959,7 +967,7 @@ header.sticky ul li a {
     }
     
     .rating-section {
-        display: flex;
+        display: block;
         justify-content: space-between;
     }
     
@@ -972,7 +980,7 @@ header.sticky ul li a {
     }
     
     .swiper-slide .card {
-        width: 26rem;
+        width: 22rem;
         background-color: #FAFAFA; 
         border: 1px #E4E4E4 solid;
         border-radius: 0px;
