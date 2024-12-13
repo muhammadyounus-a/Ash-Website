@@ -233,6 +233,13 @@ header.sticky ul li a {
     height: 50px !important;
 }
 
+.swiper-slide .card {
+    width: 26rem;
+    background-color: #FAFAFA; 
+    border: 1px #E4E4E4 solid;
+    border-radius: 0px;
+}
+
 .swiper {
     width: 100%;
     height: 300px;
@@ -266,6 +273,11 @@ header.sticky ul li a {
     font-weight: 500; 
     text-transform: uppercase;
     padding: 0px;
+}
+
+.premium {
+    padding: 5px 10px;
+    background-color: #F0F0F0;
 }
 
 .items-parent {
@@ -609,12 +621,12 @@ header.sticky ul li a {
     /* banner section css */
 
     .banner-section {
-        height: 50vh;
-        background-color: #F8F8F8;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 0px;
+        margin-top: 40px;
+        padding-top: 80px;
     }
 
     .box {
@@ -635,6 +647,98 @@ header.sticky ul li a {
     .input-box {
         display: flex;
         width: 100%; 
+    }
+
+    /* review section */ 
+
+    .review-section {
+        margin-top: 80px;
+        padding: 0;
+    }
+
+    .swiper-slide .card {
+        width: 27rem;
+        background-color: #FAFAFA; 
+        border: 1px #E4E4E4 solid;
+        border-radius: 0px;
+    }
+
+    /* similarTools-section css */
+
+    .similarTools-section {
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    .items-parent {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .items-child {
+        border: 1px #F0F0F0 solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 49%;
+        height: 140px;
+    }
+
+    .items-child-datas {
+        padding: 5px 5px 5px 15px;
+    }
+
+    .items-child-img {
+        background-color: #F0F0F0;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px; 
+        height: 100%;
+    }
+
+    .items-child-img img {
+        width: 72px; 
+        height: 70px;
+    }
+
+    .items-child h4 {
+        color: rgba(0, 0, 0, 0.90); 
+        font-size: 16px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 500;
+    }
+
+    .items-child h6 {
+        color: rgba(0, 0, 0, 0.70); 
+        font-size: 14px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+    }
+
+    .items-child p { 
+        color: rgba(0, 0, 0, 0.50);
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .seeMore-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .seeMore-btn button{
+        padding: 10px 30px;  
+        background-color: #030303;
+        color: #fff;
+        border: 0px;
+        font-family: "Metrophobic", sans-serif;
+        text-transform: uppercase;
     }
 
     /* ai-section css */
@@ -775,40 +879,213 @@ header.sticky ul li a {
     /* banner section css */
 
     .banner-section {
-        height: 100vh;
-        background-color: #F8F8F8;
+        margin-top: 20px;
+    }
+    
+    .banner-section .navigation-menu a {
+        text-decoration: none;
+        margin: 0 5px;
+        font-size: 14px; 
+        font-family: "Metrophobic", sans-serif; 
+        font-weight: 400; 
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.60)
+    }
+    
+    .banner-section .visit-btn{
+        padding: 10px 30px;  
+        background-color: #030303;
+        color: #fff;
+        border: 0px;
+        height: 50px !important;
+    }
+    
+    .banner-section .upload-btn {
+        padding: 10px 15px;  
+        border: 1px rgba(0, 0, 0, 0.30) solid;
+        height: 50px !important;
+    }
+    
+    .banner-section .heading {
+        display: block;
+        padding: 0px;
+    }
+    
+    .banner-section .all-items {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    
+    .banner-section .items {
+        height: 40px;
+        width: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        padding: 20px 20px 5px 20px;
+        background-color: rgba(0, 0, 0, 0.04);
     }
-
-    .box {
+    
+    /* review section */ 
+    
+    .review-section {
+        margin-top: 100px;
+        padding: 0;
+    }
+    
+    .review-section h6 {
+        color: rgba(0, 0, 0, 0.90); 
+        font-size: 22px; 
+        font-family: "Metrophobic", sans-serif; 
+        font-weight: 500; 
+        text-transform: uppercase;
+    }
+    
+    .review-section h3 {
+        color: black;
+        font-family: "Metrophobic", sans-serif; 
+        font-weight: 500;
+    }
+    
+    .review-section .checked {
+        color: #F5841F;
+    }
+    
+    .review-section .rating {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .rating-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .review-section .write-btn button{
+        padding: 10px 30px;  
+        background-color: #030303;
+        color: #fff;
+        border: 0px;
+        height: 50px !important;
+    }
+    
+    .swiper-slide .card {
+        width: 26rem;
+        background-color: #FAFAFA; 
+        border: 1px #E4E4E4 solid;
+        border-radius: 0px;
+    }
+    
+    .swiper {
         width: 100%;
+        height: 300px;
+    }
+    
+    .swiper-scrollbar {
+        display: none !important;
+    }
+    
+    .swiper-pagination-bullet {
+        height: 15px !important;
+        width: 15px !important;
+        border-radius: 0px !important;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background-color: #000 !important;
+    }
+    
+    /* similarTools-section css */
+    
+    .similarTools-section {
+        margin-top: 60px;
+        padding: 0px;
+    }
+    
+    .similarTools-section h2 {
+        color: rgba(0, 0, 0, 0.80); 
+        font-size: 24px; 
+        font-family: "Metrophobic", sans-serif; 
+        font-weight: 500; 
+        text-transform: uppercase;
+        padding: 0px;
+    }
+    
+    .premium {
+        padding: 5px 10px;
+        background-color: #F0F0F0;
+    }
+    
+    .items-parent {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .items-child {
+        border: 1px #F0F0F0 solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 550px;
+        height: 140px;
+    }
+    
+    .items-child-datas {
+        padding: 15px 15px 5px 15px;
+    }
+    
+    .items-child-img {
+        background-color: #F0F0F0;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 220px; 
+        height: 100%;
+    }
+    
+    .items-child-img img {
+        width: 72px; 
+        height: 70px;
+    }
+    
+    .items-child h4 {
+        color: rgba(0, 0, 0, 0.90); 
+        font-size: 18px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 500;
+    }
+    
+    .items-child h6 {
+        color: rgba(0, 0, 0, 0.70); 
+        font-size: 14px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+    }
+    
+    .items-child p { 
+        color: rgba(0, 0, 0, 0.50);
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+    }
+    
+    .seeMore-btn {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
     }
-
-    .box-card {
-        border: 1px solid #00000091;
-        border-radius: 0px;
-        padding: 6px 10px 0px 10px;
-        width: 100%;
-    }
-
-    .input-box {
-        display: flex;
-        width: 100%; 
-    }
-
-    .input-box input {
-        border: 1px solid #00000091;
-        outline: #00000091;
-        padding: 15px 20px;
-        background-color: transparent;
-        width: 100%; 
+    
+    .seeMore-btn button{
+        padding: 10px 30px;  
+        background-color: #030303;
+        color: #fff;
+        border: 0px;
+        font-family: "Metrophobic", sans-serif;
+        text-transform: uppercase;
     }
 
     /* ai-section css */
