@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Navigation</title>
+    <style>
+
+        .sidebarNav {
+            outline: 0px solid;
+            width: 64px; 
+            height: auto;
+            transition: 0.3s;
+            position: fixed;
+            right: -5%; 
+            transform: translateX(50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            z-index: 1;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0px 0px 23.5px rgba(0, 0, 0, 0.10); 
+            border: 1px rgba(0, 0, 0, 0.10) solid;
+            font-size: 13px;
+        }
+
+        .sidebarNavIn {
+            right: -30px;
+            margin-right: 0px;
+            opacity: 1;
+        }
+
+        .sidebarNavItem {
+            width: 100%;
+            height: 40px;
+            outline: 0px;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #aaa;
+            border: 0px solid white;
+            transition: 0.3s;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 2px;
+            color: rgba(0, 0, 0, 0.50);
+            font-family: roboto, arial, sans-serif;
+            font-weight: 100;
+            padding: 0;
+        }
+
+        .sidebarNav a{
+            text-decoration: none;
+        }
+
+        .area {
+            height: 100vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebarNav">
+        <a class="scrollLink" href="#area1">
+            <div class="sidebarNavItem">NEW</div>
+        </a>
+        <a class="scrollLink" href="#area2">
+            <div class="sidebarNavItem">nov</div>
+        </a>
+        <a class="scrollLink" href="#area3">
+            <div class="sidebarNavItem">oct</div>
+        </a>
+        <a class="scrollLink" href="#area4">
+            <div class="sidebarNavItem">aug</div>
+        </a>
+        <a class="scrollLink" href="#area5">
+            <div class="sidebarNavItem">jul</div>
+        </a>
+        <a class="scrollLink" href="#area6">
+            <div class="sidebarNavItem">jun</div>
+        </a>
+        <a class="scrollLink" href="#area7">
+            <div class="sidebarNavItem">may</div>
+        </a>
+        <a class="scrollLink" href="#area8">
+            <div class="sidebarNavItem">apr</div>
+        </a>
+        <a class="scrollLink" href="#area9">
+            <div class="sidebarNavItem">mar</div>
+        </a>
+        <a class="scrollLink" href="#area10">
+            <div class="sidebarNavItem">feb</div>
+        </a>
+        <a class="scrollLink" href="#area11">
+            <div class="sidebarNavItem">jan</div>
+        </a>
+        <a class="scrollLink" href="#area12">
+            <div class="sidebarNavItem">dec</div>
+        </a>
+    </div>
+    <section class="top">
+        <a class="navJump" style="height: 100px;"></a>
+        <h1>Top</h1>
+        <small>
+            Scroll down. Menu appears to the right upon entering Section 1, and automatically highlights the current section.<br>
+            Clicking a menu item will auto scroll the screen to that section.
+        </small>
+    </section>
+
+    <section class="area" style="background: #D6FF93;">
+        <a class="navJump" style="height: 100px;" name="area1" id="area1"></a>
+        <h1>Section 1</h1>
+    </section>
+    <section class="area" style="background: #E8C575;">
+        <a class="navJump" style="height: 100px;" name="area2" id="area2"></a>
+        <h1>Section 2</h1>
+    </section>
+    <section class="area" style="background: #FF9E8D;">
+        <a class="navJump" style="height: 100px;" name="area3" id="area3"></a>
+        <h1>Section 3</h1>
+    </section>
+    <section class="area" style="background: #C475E8;">
+        <a class="navJump" style="height: 100px;" name="area4" id="area4"></a>
+        <h1>Section 4</h1>
+    </section>
+    <section class="area" style="background: #8ABBFF;">
+        <a class="navJump" style="height: 100px;" name="area5" id="area5"></a>
+        <h1>Section 5</h1>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var topSec = document.querySelector(".top");
+
+        $(window).scroll(function () {
+            var topPos = $(topSec).offset().top;
+            var topBot = topPos + $(topSec).outerHeight(true);
+
+            if ($(window).scrollTop() > topBot) {
+                $(".sidebarNav").addClass("sidebarNavIn");
+            } else {
+                $(".sidebarNav").removeClass("sidebarNavIn");
+            }
+        });
+
+        var sidebarNavButton = document.querySelectorAll(".sidebarNavItem");
+        var sidebarNavSection = document.querySelectorAll(".area");
+
+        $(sidebarNavSection).each(function (index) {
+            var navSec = sidebarNavSection[index];
+            var navBut = sidebarNavButton[index];
+
+            $(window).scroll(function () {
+                var navPos = $(navSec).offset().top;
+                var secBot = navPos + $(navSec).outerHeight(true);
+
+                if ($(this).scrollTop() > navPos && $(this).scrollTop() < secBot) {
+                    $(navBut).css("background-color", "#F4F4F4");
+                    $(navBut).css("color", "#000");
+                } else {
+                    $(navBut).css("background-color", "initial");
+                    $(navBut).css("color", "initial");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(".scrollLink").on("click", function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
