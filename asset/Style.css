@@ -195,6 +195,59 @@ header.sticky ul li a {
     white-space: nowrap; 
 }
 
+/* side bar css */
+
+small {font-size:16px;}
+
+.sidebarNav{
+  outline:0px solid;
+  width:75px;
+  transition:.3s;
+  position:fixed;
+  right:-55px;
+  top:25px;
+  background-color:#aaa;
+  opacity:0;
+  z-index: 1;
+  border-radius:7px 0px 0px 7px;
+  overflow:hidden;
+}
+
+.sidebarNavIn{
+  right:0;
+  margin-right:0px;
+  opacity:1;
+}
+
+.sidebarNavItem{
+  width:100%;
+  height:55px;
+  outline:0px;
+  border:0px;
+  display:block;
+  background-color:#aaa;
+  border:0px solid white;
+  transition:.3s;
+  text-align:center;
+  font-size:12px;
+  margin-bottom:2px;
+  padding-top:10px;
+  color:white;
+  font-family:roboto, arial, sans-serif;
+  font-weight:100;
+}
+
+.sidebarNavItem:hover{
+  outline:0px;
+  background-color:#ef6c00;
+  transform:scale(1, 1);
+
+}
+
+.sidebarNav a:hover{
+  text-decoration:none;
+}
+
 /* all-items css */
 
 .all-items {
