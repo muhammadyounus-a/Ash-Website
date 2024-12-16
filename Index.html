@@ -1226,6 +1226,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="endSection"></div>
                     <div class="see-more mt-4">
                         <button onclick="btnClick()">See More</button>
                     </div>
@@ -1380,29 +1381,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         var topSec = document.querySelector(".top");
-
+        var endSection = document.querySelector(".endSection"); // Specify the end section
+    
         $(window).scroll(function () {
             var topPos = $(topSec).offset().top;
             var topBot = topPos + $(topSec).outerHeight(true);
-
-            if ($(window).scrollTop() > topBot) {
+    
+            var endPos = $(endSection).offset().top; // Get the position of the end section
+    
+            if ($(window).scrollTop() > topBot && $(window).scrollTop() < endPos) {
                 $(".sidebarNav").addClass("sidebarNavIn");
             } else {
                 $(".sidebarNav").removeClass("sidebarNavIn");
             }
         });
-
+    
         var sidebarNavButton = document.querySelectorAll(".sidebarNavItem");
         var sidebarNavSection = document.querySelectorAll(".area");
-
+    
         $(sidebarNavSection).each(function (index) {
             var navSec = sidebarNavSection[index];
             var navBut = sidebarNavButton[index];
-
+    
             $(window).scroll(function () {
                 var navPos = $(navSec).offset().top;
                 var secBot = navPos + $(navSec).outerHeight(true);
-
+    
                 if ($(this).scrollTop() > navPos && $(this).scrollTop() < secBot) {
                     $(navBut).css("background-color", "#F4F4F4");
                     $(navBut).css("color", "#000");
@@ -1412,13 +1416,13 @@
                 }
             });
         });
-
+    
         $(document).ready(function () {
             $(".scrollLink").on("click", function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
-
+    
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
                     }, 800, function () {
@@ -1428,6 +1432,7 @@
             });
         });
     </script>
+    
 </body>
 
 </html>
