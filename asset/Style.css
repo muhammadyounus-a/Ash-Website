@@ -454,6 +454,10 @@ header.sticky ul li a {
     text-transform: uppercase;
 }
 
+.flex-section {
+    display: none;
+}
+
 /* contribution-section css */
 
 .contribution-section {
