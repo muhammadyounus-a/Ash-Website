@@ -425,6 +425,62 @@ header.sticky ul li a {
     font-weight: 300;
 }
 
+/* ai-section css */
+
+.ai-section {
+    margin-top: 100px;
+}
+
+.ai-section p {
+    color: #000000a9;
+}
+
+.border-line {
+    border: 1px solid #CDCDCD;
+}
+
+.bg-gray {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 30px 0px;
+}
+
+.bg-team {
+    background-color: #F8F8F8;
+    padding: 40px 30px;
+} 
+
+.dog-img {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.bg-team h4 {
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.hashTags {
+    height: 40px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 5px 20px;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.getTeach-btn button {
+    padding: 10px 30px;
+    border: 0px;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 300;
+}
+
 /* newBlog-section css */
 
 .newBlog-section {
@@ -790,6 +846,18 @@ header.sticky ul li a {
         color: #fff;
     }
 
+    /* ai-section css */
+
+    .ai-section {
+        margin-top: 80px;
+    }
+
+    .bg-gray {
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px 0px;
+        height: 15vh;
+    }
+
     /* footer section css */
 
     .footer-section {
@@ -1018,6 +1086,34 @@ header.sticky ul li a {
         align-items: center;
         justify-content: center;
         color: #fff;
+    }
+
+    /* ai-section css */
+
+    .ai-section {
+        margin-top: 60px;
+    }
+
+    .bg-gray {
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px 0px;
+        height: 25vh;
+    }
+
+    .bg-team {
+        background-color: #F8F8F8;
+        padding: 40px 10px;
+    } 
+
+    .hashTags {
+        height: 40px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px 0px 10px;
+        background-color: rgba(0, 0, 0, 0.04);
+        font-size: 12px;
     }
 
     /* newBlog-section css */
