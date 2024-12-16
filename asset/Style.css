@@ -247,8 +247,7 @@ header.sticky ul li a {
 }
 
 .area {
-    height: 100vh;
-    padding: 20px;
+    height: auto;
 }
 
 /* all-items css */
@@ -454,7 +453,7 @@ header.sticky ul li a {
     text-transform: uppercase;
 }
 
-.flex-section {
+#flex-section {
     display: none;
 }
 
