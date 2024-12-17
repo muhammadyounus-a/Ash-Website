@@ -384,6 +384,12 @@ header.sticky ul li a {
     background-color: #F0F0F0;
 }
 
+.sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .section .items-child {
     border: 1px #F0F0F0 solid;
     display: flex;
