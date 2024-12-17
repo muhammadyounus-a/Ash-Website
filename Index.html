@@ -1354,67 +1354,68 @@
     <script src="asset/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- navbar script js end -->
-    <script>
-        function btnClick() {
-            let value = document.getElementById("flex-section");
-            value.style.display = "block";
-        }
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        var topSec = document.querySelector(".top");
-        var endSection = document.querySelector(".endSection"); // Specify the end section
-    
-        $(window).scroll(function () {
-            var topPos = $(topSec).offset().top;
-            var topBot = topPos + $(topSec).outerHeight(true);
-    
-            var endPos = $(endSection).offset().top; // Get the position of the end section
-    
-            if ($(window).scrollTop() > topBot && $(window).scrollTop() < endPos) {
-                $(".sidebarNav").addClass("sidebarNavIn");
+       function btnClick() {
+            let value = document.getElementById("flex-section");
+            let sidebar = document.querySelector(".sidebarNav"); // Select the sidebar element
+            
+            // Toggle the sidebar visibility
+            if (sidebar.style.display === "none" || sidebar.style.display === "") {
+                sidebar.style.display = "block"; // Show sidebar
+                value.style.display = "block";   // Show other content if needed
             } else {
-                $(".sidebarNav").removeClass("sidebarNavIn");
+                sidebar.style.display = "none";  // Hide sidebar
             }
-        });
-    
-        var sidebarNavButton = document.querySelectorAll(".sidebarNavItem");
-        var sidebarNavSection = document.querySelectorAll(".area");
-    
-        $(sidebarNavSection).each(function (index) {
-            var navSec = sidebarNavSection[index];
-            var navBut = sidebarNavButton[index];
-    
-            $(window).scroll(function () {
-                var navPos = $(navSec).offset().top;
-                var secBot = navPos + $(navSec).outerHeight(true);
-    
-                if ($(this).scrollTop() > navPos && $(this).scrollTop() < secBot) {
-                    $(navBut).css("background-color", "#F4F4F4");
-                    $(navBut).css("color", "#000");
-                } else {
-                    $(navBut).css("background-color", "initial");
-                    $(navBut).css("color", "initial");
-                }
-            });
-        });
-    
+        }
+
         $(document).ready(function () {
+            const topSec = $(".top");
+            const endSection = $(".endSection");
+            const sidebarNav = $(".sidebarNav");
+            const sidebarNavButton = $(".sidebarNavItem");
+            const sidebarNavSection = $(".area");
+            
+            // Function to handle sidebar visibility on scroll
+            $(window).on("scroll", function () {
+                const topPos = topSec.offset().top;
+                const topBot = topPos + topSec.outerHeight(false);
+                const endPos = endSection.offset().top;
+                const scrollTop = $(this).scrollTop();
+
+                if (scrollTop > topBot && scrollTop < endPos) {
+                    sidebarNav.addClass("sidebarNavIn");
+                } else {
+                    sidebarNav.removeClass("sidebarNavIn");
+                }
+
+                // Section highlighting optimization
+                sidebarNavSection.each(function (index) {
+                    const section = $(this);
+                    const navButton = $(sidebarNavButton[index]);
+                    const navPos = section.offset().top - 200; // Adjust for fixed header
+                    const navBottom = navPos + section.outerHeight(true);
+
+                    if (scrollTop >= navPos && scrollTop < navBottom) {
+                        navButton.css({ "background-color": "#F4F4F4", "color": "#000" });
+                    } else {
+                        navButton.css({ "background-color": "initial", "color": "initial" });
+                    }
+                });
+            });
+
+            // Smooth Scroll Functionality
             $(".scrollLink").on("click", function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
-                    var hash = this.hash;
-    
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
+                    const hash = this.hash;
+                    $("html, body").animate({
+                        scrollTop: $(hash).offset().top - 200
+                    }, 800);
                 }
             });
         });
-    </script>
-    
-</body>
 
+    </script>
+</body>
 </html>
