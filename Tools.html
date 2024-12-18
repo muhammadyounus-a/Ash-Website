@@ -23,7 +23,7 @@
         <!-- navbar section -->
         <header>
             <div class="logo">
-                <a href="#"><img class="main-logo" src="asset/image/Logo-Black.jpg" alt=""></a>
+                <a href="#"><img class="main-logo" src="asset/image/logo-black.svg" alt=""></a>
             </div>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close" class="header__close" id="close-menu"></ion-icon>
@@ -161,9 +161,30 @@
                         </div>
                         <div id="popup" class="popup-overlay">
                             <div class="popup-content">
-                                <h2>Write a Review</h2>
-                                <textarea rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" placeholder="Write your review here..."></textarea>
-                                <button class="close-btn" onclick="closePopup()">Close</button>
+                                <div class="popup-heading">
+                                    <h5>Rate your experience</h5>
+                                    <button onclick="closePopup()"><i class="fa-solid fa-xmark" id="closePopup"></i></button>
+                                </div>
+                                <div class="rating-star mt-3">
+                                    <div class="rating-star-bg">
+                                        <button><i class="fa-solid fa-star"></i></button>
+                                    </div>
+                                    <div class="rating-star-bg ms-3">
+                                        <button><i class="fa-solid fa-star"></i></button>
+                                    </div>
+                                    <div class="rating-star-bg ms-3">
+                                        <button><i class="fa-solid fa-star"></i></button>
+                                    </div>
+                                    <div class="rating-star-bg ms-3">
+                                        <button><i class="fa-solid fa-star"></i></button>
+                                    </div>
+                                    <div class="rating-star-bg ms-3">
+                                        <button><i class="fa-solid fa-star"></i></button>
+                                    </div>
+                                </div>
+                                <h5 class="mt-4 mb-3">feed back</h5>
+                                <textarea rows="5" style="width: 100%; padding: 10px; border: 1px #E4E4E4 solid; border-radius: 0px;outline: none;" placeholder="Write you feed back..."></textarea>
+                                <button class="submit-btn mt-4 ">SUBMIT</button>
                             </div>
                         </div>
                     </div>
