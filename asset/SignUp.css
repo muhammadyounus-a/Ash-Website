@@ -13,8 +13,130 @@ body {
     overflow-x: hidden;
 }
 
-.container-fluid img{
+.banner-section {
+    position: relative;
+}
+
+.banner-section .heading {
+    position: absolute;
+    bottom: 60px;
+    color: #fff;
+    font-size: 50px;
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 400;
+    left: 60px;
+}
+
+.banner-section img {
     height: 100vh !important;
+}
+
+.datas-div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.datas-div h1 {
+    color: #030303; 
+    font-size: 38px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 500;
+}
+
+.datas-div p {
+    color: #666666; 
+    font-size: 20px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 400;
+}
+
+.input-area label {
+    color: rgba(0, 0, 0, 0.90); 
+    font-size: 18px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 400;
+}
+
+.input-area input {
+    border: 1px #E4E4E4 solid;
+    border-radius: 0px;
+    outline: 1px #E4E4E4 solid !important;
+    padding: 13px;
+    width: 100% !important;
+}
+
+.input-area input::placeholder {
+    color: #B3B3B3; 
+}
+
+.input-area input:focus {
+    outline: 1px #E4E4E4 solid !important;
+}
+
+.checkbox-input {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between the checkbox and text */
+}
+
+.checkbox-input input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    background-color: #E9E9E9;
+    border: 2px solid #ccc; /* Add a border for better visibility */
+    border-radius: 4px; /* Optional: Make the checkbox slightly rounded */
+    appearance: none; /* Remove default styling for custom design */
+    cursor: pointer;
+}
+
+.checkbox-input input[type="checkbox"]:checked {
+    background-color: rgb(127, 127, 255); /* Change color when checked */
+    border-color: rgb(127, 127, 255);
+}
+
+.checkbox-input input[type="checkbox"]:checked::after {
+    content: '✓'; /* Add a checkmark */
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px; /* Center checkmark inside the checkbox */
+}
+
+.checkbox-input p {
+    margin: 0; /* Remove any default margin */
+    color: #1A1A1A;
+    font-size: 15px;
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 400;
+    line-height: 1.5; /* Improve readability */
+    cursor: pointer; /* Make the label clickable */
+}
+
+.signUp-btn button {
+    background-color: #030303;
+    color: #fff;
+    width: 100% !important;
+    border: 0px;
+    padding: 15px 0px;
+}
+
+.line-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-area h5 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.line {
+    width: 34%;
+    background-color: rgba(0, 0, 0, 0.40);
+    height: 1px;
 }
 
 /* media query starting */
