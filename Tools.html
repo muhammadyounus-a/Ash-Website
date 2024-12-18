@@ -157,7 +157,14 @@
                             <p style=" color: black;">128 reviews</p>
                         </div>
                         <div class="write-btn">
-                            <button><i class="fa-solid fa-pen me-2"></i> write review</button>
+                            <button onclick="popUp()"><i class="fa-solid fa-pen me-2"></i> Write Review</button>
+                        </div>
+                        <div id="popup" class="popup-overlay">
+                            <div class="popup-content">
+                                <h2>Write a Review</h2>
+                                <textarea rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;" placeholder="Write your review here..."></textarea>
+                                <button class="close-btn" onclick="closePopup()">Close</button>
+                            </div>
                         </div>
                     </div>
                     <!-- swiper section -->
@@ -505,10 +512,22 @@
                 },
                 1400: {
                     slidesPerView: 3.5,
-                    spaceBetween: 40,
+                    spaceBetween: 20,
                 },
             },
         });
+
+        // popup code
+
+        function popUp() {
+            document.getElementById('popup').style.display = 'flex';
+            document.body.classList.add('no-scroll'); // Disable scrolling
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.body.classList.remove('no-scroll'); // Re-enable scrolling
+        }
 
     </script>
 </body>
