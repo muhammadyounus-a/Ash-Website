@@ -10,9 +10,12 @@
 body {
     font-family: "Metrophobic", sans-serif;
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 
-
+.container-fluid img{
+    height: 100vh !important;
+}
 
 /* media query starting */
 
