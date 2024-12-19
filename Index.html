@@ -18,7 +18,7 @@
         <!-- navbar section -->
         <header>
             <div class="logo">
-                <a href="#"><img class="main-logo" src="asset/image/Logo-Black.jpg" alt=""></a>
+                <a href="#"><img class="main-logo" src="asset/image/logo-black.svg" alt=""></a>
             </div>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close" class="header__close" id="close-menu"></ion-icon>
@@ -81,20 +81,16 @@
                 <div class="row justify-content-center">
                     <h1>Discover the best tools<br> and resources powered by webseek AI</h1>
                     <div class="box mt-4">
-                        <div class="box-card">
-                            <p>Suggest AI tools and tutorials to help <span>graphic designers</span> improve creativity and efficiency.</p>
-                        </div>
-                        <div class="box-card">
-                            <p>AI tools for efficient, user-friendly navbar design in Flutter</p>
-                        </div>
-                        <div class="box-card">
-                            <p>AI tools for easily removing backgrounds from images and photos.</p>
-                        </div>
-                        <div class="box-card">
-                            <p>AI tools and tutorials to help Flutter developers enhance productivity and skills.</p>
-                        </div>
+                        <button class="box-card" onclick="setInputValue(this)">
+                            <p>Suggest AI tools and tutorials to help graphic designers improve creativity and efficiency.</p>
+                            <i><img src="asset/image/home/arrow-up-right.svg" alt=""></i>
+                        </button>
+                        <button class="box-card" onclick="setInputValue(this)">
+                            <p>Suggest AI tools and tutorials to help graphic designers improve creativity and efficiency.</p>
+                            <i><img src="asset/image/home/arrow-up-right.svg" alt=""></i>
+                        </button>
                         <div class="input-box">
-                            <input type="text" placeholder="Let AI find the best resources for you...">
+                            <input type="text" id="resourceInput" placeholder="Let AI find the best resources for you...">
                             <button><i class="fa fa-arrow-up"></i></button>
                         </div>
                     </div>
@@ -1356,6 +1352,13 @@
     <!-- navbar script js end -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        // button value adding input
+        function setInputValue(button) {
+            const inputBox = document.getElementById('resourceInput');
+            const buttonText = button.querySelector('p').textContent.trim();
+            inputBox.value = buttonText;
+        }
+       // Side bar 
        function btnClick() {
             let value = document.getElementById("flex-section");
             let sidebar = document.querySelector(".sidebarNav"); // Select the sidebar element
@@ -1368,14 +1371,12 @@
                 sidebar.style.display = "none";  // Hide sidebar
             }
         }
-
         $(document).ready(function () {
             const topSec = $(".top");
             const endSection = $(".endSection");
             const sidebarNav = $(".sidebarNav");
             const sidebarNavButton = $(".sidebarNavItem");
             const sidebarNavSection = $(".area");
-            
             // Function to handle sidebar visibility on scroll
             $(window).on("scroll", function () {
                 const topPos = topSec.offset().top;
@@ -1388,7 +1389,6 @@
                 } else {
                     sidebarNav.removeClass("sidebarNavIn");
                 }
-
                 // Section highlighting optimization
                 sidebarNavSection.each(function (index) {
                     const section = $(this);
@@ -1403,7 +1403,6 @@
                     }
                 });
             });
-
             // Smooth Scroll Functionality
             $(".scrollLink").on("click", function (event) {
                 if (this.hash !== "") {
@@ -1415,7 +1414,6 @@
                 }
             });
         });
-
     </script>
 </body>
 </html>
