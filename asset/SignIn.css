@@ -13,12 +13,8 @@ body {
     overflow-x: hidden;
 }
 
-.logo-tab {
+.heading-text-tab {
     display: none;
-}
-
-.logo-web {
-    display: flex;
 }
 
 .banner-section {
@@ -202,13 +198,21 @@ body {
 
 @media all and (max-width:900px) {
 
-    .logo-tab {
-        display: block;
-        height: 70px !important;
-        width: 100px !important;
+    .heading-text-tab {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0px 0px 0px;
     }
 
-    .logo-web {
+    .heading-text-tab h5 a {
+        text-decoration: none;
+        color: #1A1A1A; 
+        font-size: 16.01px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 500;
+    }
+
+    .heading-text {
         display: none;
     }
     
@@ -219,17 +223,42 @@ body {
     .banner-section .banner-img {
         height: 15vh !important;
         width: 100%;
+        margin-top: 30px;
     }
-    
+
     .datas-div {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+    }
+    
+    .datas-div-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 20px 0px;
     }
 }
 
 @media all and (max-width:768px) {
+
+    .heading-text-tab {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .datas-div-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0px 0px 30px 0px;
+    }
+
     .datas-div p {
         color: #666666; 
         font-size: 14px; 
