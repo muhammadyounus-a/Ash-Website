@@ -17,6 +17,10 @@ body {
     display: none;
 }
 
+.logo-web {
+    display: flex;
+}
+
 .banner-section {
     position: relative;
     padding: 10px 0px;
@@ -40,6 +44,28 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.datas-div-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 0px;
+}
+
+.heading-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-text h5 a {
+    text-decoration: none;
+    color: #1A1A1A; 
+    font-size: 16.01px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
 }
 
 .datas-div h1 {
