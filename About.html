@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- style link -->
     <link rel="stylesheet" href="asset/About.css">
+    <link rel="stylesheet" href="asset/Global.css">
 </head>
 
 <body>
@@ -131,15 +132,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-4 col-md-6 mt-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <img class="img-fluid" src="asset/image/Features/card-img-1.webp" alt="">
-                                <p class="mt-3">Nov 19, 2024</p>
-                                <h3 class="mt-2">Artificial Intelligence (AI) has become an invaluable tool for photographers looking to scale their businesses efficiently.</h3>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -149,7 +141,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="logo">
-                        <a href="#"><img class="main-logo" src="asset/image/Logo-img.jpg" alt=""></a>
+                        <div class="" id="lottie-container"></div>
                     </div>
                     <ul class="footer-nav">
                         <li class=""><a href="#">AL Tools</a></li>
@@ -177,6 +169,42 @@
     <script src="asset/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- navbar script js end -->
+    <!-- footer icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const container = document.getElementById('lottie-container');
+          const animation = lottie.loadAnimation({
+            container: container,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false, // Start only on scroll
+            path: './asset/Footer-icon.json'
+          });
+      
+          animation.addEventListener('DOMLoaded', () => {
+            // Optional: Change color dynamically
+            const layers = animation.renderer.elements;
+            layers.forEach((layer) => {
+              if (layer.name === "desired-layer-name") { // Match specific layer
+                layer.style.fill = "#fff"; // Change color
+              }
+            });
+          });
+      
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animation.play(); // Play the animation when the section is in view
+              }
+            });
+          }, {
+            threshold: 0.5 // Trigger when 50% of the section is visible
+          });
+      
+          observer.observe(container);
+        });
+      </script>
 </body>
 
 </html>
