@@ -25,6 +25,14 @@ a {
     fill: white;
 }
 
+#lottie-container > svg > g > g:nth-child(2) > g > path:first-child {
+    fill: white !important;
+}
+
+#lottie-container > svg > g > g:nth-child(1) > g > path:first-child {
+    fill: white !important;
+}
+
 /* Navbar section */
 
 header {
@@ -162,7 +170,7 @@ header.sticky ul li a {
 
 .footer-section .logo {
     height: auto;
-    width: 200px;
+    width: 100px;
 }
 
 .footer-section .container {

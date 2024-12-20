@@ -172,37 +172,13 @@
     <!-- footer icon -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const container = document.getElementById('lottie-container');
-          const animation = lottie.loadAnimation({
+        const container = document.getElementById('lottie-container');
+        const animation = lottie.loadAnimation({
             container: container,
             renderer: 'svg',
             loop: false,
-            autoplay: false, // Start only on scroll
+            autoplay: true,
             path: './asset/Footer-icon.json'
-          });
-      
-          animation.addEventListener('DOMLoaded', () => {
-            // Optional: Change color dynamically
-            const layers = animation.renderer.elements;
-            layers.forEach((layer) => {
-              if (layer.name === "desired-layer-name") { // Match specific layer
-                layer.style.fill = "#fff"; // Change color
-              }
-            });
-          });
-      
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                animation.play(); // Play the animation when the section is in view
-              }
-            });
-          }, {
-            threshold: 0.5 // Trigger when 50% of the section is visible
-          });
-      
-          observer.observe(container);
         });
       </script>
 </body>
