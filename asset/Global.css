@@ -239,6 +239,51 @@ header.sticky ul li a {
     }
 }
 
+@media all and (max-width:1040px) { 
+    
+    .logo img {
+        height: 45px;
+    }
+    
+    .nav__item a {
+        position: relative;
+        margin: 0 20px;
+        text-decoration: none;
+        transition: 0.6s;
+        font-family: "Metrophobic", sans-serif;
+        color: #1A1A1A; 
+        font-size: 14px; 
+        font-weight: 400; 
+        text-transform: uppercase;
+    }
+    
+    .navBtn button {
+        margin: 0 1px;
+        padding: 8px 20px;
+    }
+    
+    .signUp-btn {
+        background-color: transparent;
+        border: 0.80px rgba(0, 0, 0, 0.60) solid;
+        transition: 0.3s;
+        padding: 0px;
+        color: rgba(0, 0, 0, 0.70); 
+        font-size: 12px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400; 
+        text-transform: uppercase;
+    }
+    
+    .Contribute-btn {
+        background-color: #1A1A1A;
+        color: #fff;
+        border: 1px solid #1A1A1A;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
 @media all and (max-width:900px) {
 
     /* navbar css */

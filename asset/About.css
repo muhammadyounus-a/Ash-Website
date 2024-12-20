@@ -81,6 +81,7 @@
     background: white;
     border: 0px;
     color: #000;
+    width: 230px;
 }
 
 .newBlog-section .container h3 {
@@ -111,6 +112,32 @@
     font-weight: 400;
     letter-spacing: 0.18px;
     line-height: 27px;
+}
+
+.blog-section-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    width: 100%;
+    gap: 1rem; 
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
+.blog-section-card .card {
+    flex-shrink: 0;
+    width: 32rem;
+}
+
+.blog-section-card::-webkit-scrollbar {
+    display: none;
+}
+
+.blog-section-card {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* media query starting */
