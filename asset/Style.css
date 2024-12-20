@@ -142,12 +142,14 @@ header.sticky ul li a {
 /* banner section css */
 
 .banner-section {
-    height: 90vh;
+    height: 60vh;
     background-color: #F8F8F8;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     margin-top: 80px;
+    /* position: sticky;
+    top: 92px; */
 }
 
 .banner-section .container h1 {
@@ -193,12 +195,12 @@ header.sticky ul li a {
 
 .input-box {
     display: flex;
-    width: 81.7%; 
+    width: 78%; 
 }
 
 .input-box input {
     outline: #00000091;
-    padding: 15px 20px;
+    padding: 0px 25px;
     background-color: transparent;
     width: 100%; 
     border: 1px #DADADA solid;
@@ -212,7 +214,8 @@ header.sticky ul li a {
 }
 
 .input-box button {
-    padding: 20px 25px;
+    height: 65px;
+    width: 65px;
     color: #fff;
     border: 1px solid #000;
     white-space: nowrap; 
@@ -233,7 +236,7 @@ header.sticky ul li a {
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    z-index: 1;
+    z-index: 3000;
     overflow: hidden;
     background: white;
     box-shadow: 0px 0px 23.5px rgba(0, 0, 0, 0.10); 
@@ -278,7 +281,11 @@ header.sticky ul li a {
 /* all-items css */
 
 .all-items {
-    margin-top: 100px;
+    padding-top: 50px;
+    background-color: #fff;
+    /* position: relative;
+    z-index: 100; */
+    padding-bottom: 100px;
 }
 
 .all-items .all-items-data {
@@ -354,47 +361,6 @@ header.sticky ul li a {
     padding: 5px 20px;
 }
 
-/* uiUx-section css */
-
-.uiUx-section {
-    margin-top: 20px;
-    padding: 0px;
-    display: flex;
-}
-
-.uiUx-text {
-    color: rgba(0, 0, 0, 0.80); 
-    font-size: 32px; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 600; 
-    text-transform: uppercase;
-    border-right: 2px solid black;
-    width: fit-content;
-    padding: 0px 10px 0px 0px;
-    width: 140px;
-}
-
-.uiUx-items {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-    white-space: nowrap;
-}
-
-.uiUx-items::-webkit-scrollbar {
-    display: none;
-}
-
-.uiUx-datas {
-    margin: 0 5px;
-    border: 0.7px rgba(0, 0, 0, 0.30) solid;
-    padding: 5px;
-    white-space: nowrap;
-}
-
 /* items-parent-1 css */
 
 .section {
@@ -402,6 +368,8 @@ header.sticky ul li a {
     display: none;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 100;
 }
 
 .section .premium {
@@ -420,8 +388,8 @@ header.sticky ul li a {
     border: 1px #F0F0F0 solid;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 550px;
+    justify-content: center;
+    width: 32.5%;
     height: 140px;
 }
 
@@ -435,8 +403,8 @@ header.sticky ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px; 
-    height: 100%;
+    width: 140px; 
+    height: 140px;
 }
 
 .section .items-child-img img {
@@ -446,14 +414,14 @@ header.sticky ul li a {
 
 .section .items-child h4 {
     color: rgba(0, 0, 0, 0.90); 
-    font-size: 18px; 
+    font-size: 19px; 
     font-family: "Inter", sans-serif; 
     font-weight: 500;
 }
 
 .section .items-child h6 {
     color: rgba(0, 0, 0, 0.70); 
-    font-size: 14px; 
+    font-size: 15px; 
     font-family: "Inter", sans-serif; 
     font-weight: 400;
 }
@@ -462,6 +430,7 @@ header.sticky ul li a {
     color: rgba(0, 0, 0, 0.50);
     font-family: "Inter", sans-serif; 
     font-weight: 400;
+    font-size: 13px;
 }
 
 .active-section {
@@ -492,7 +461,10 @@ header.sticky ul li a {
 /* contribution-section css */
 
 .contribution-section {
-    margin-top: 100px;
+    margin-top: 0px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
 }
 
 .contribution-section .container {
@@ -519,7 +491,11 @@ header.sticky ul li a {
 /* ai-section css */
 
 .ai-section {
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    padding-bottom: 100px;
 }
 
 .ai-section p {
@@ -575,9 +551,11 @@ header.sticky ul li a {
 /* newBlog-section css */
 
 .newBlog-section {
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: #010102;
     padding: 60px 0px;
+    position: relative;
+    z-index: 100;
 }
 
 .newBlog-section .container h3 {
@@ -609,6 +587,8 @@ header.sticky ul li a {
     background-size: cover;
     height: 100% !important;
     width: 100% !important;
+    position: relative;
+    z-index: 100;
 }
 
 .footer-section .line {
@@ -661,9 +641,20 @@ header.sticky ul li a {
 
 @media all and (min-width:1300px) { 
     .container {
-        max-width: 1680px !important;
+        max-width: 1600px !important;
     }
 }
+
+@media all and (max-width:1354px) {
+    .section .items-child {
+        border: 1px #F0F0F0 solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 49%;
+        height: 140px;
+    }
+ }
 
 @media all and (max-width:900px) {
 
