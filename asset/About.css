@@ -147,17 +147,20 @@ header.sticky ul li a {
 
 .banner-section .container h1 {
     color: black;
-    margin-top: 40px;
-}
-
-.banner-section .container p span {
-    font-weight: bold;
-    font-family: "Inter", sans-serif;
+    font-size: 48px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 400; 
+    text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .banner-section .container p {
-    color: #000000b9;
-    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.60); 
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400; 
+    line-height: 30px; 
+    word-wrap: break-word;
 }
 
 .banner-section .container .card { 
@@ -211,16 +214,29 @@ header.sticky ul li a {
 .newBlog-section {
     margin-top: 100px;
     background-color: #010102;
-    padding: 60px 0px;
+    padding: 60px 0px 100px 0px;
+}
+
+.articl-btn button {
+    padding: 10px 24px;
+    background: white;
+    border: 0px;
+    color: #000;
 }
 
 .newBlog-section .container h3 {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.90); 
+    font-size: 24px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 500;
 }
 
 .newBlog-section .container p {
-    color: #ffffffc5;
-    font-family: "Inter", sans-serif;
+    color: #6A6A6A; 
+    font-size: 18px; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 400; 
+    letter-spacing: 0.18px;
 }
 
 .newBlog-section .container .card {
@@ -230,8 +246,12 @@ header.sticky ul li a {
 }
 
 .newBlog-section .container .card h3 {
-    color: #fff;
-    font-size: 22px;
+    color: rgba(255, 255, 255, 0.90); 
+    font-size: 18px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    line-height: 27px;
 }
 
 /* footer section css */
