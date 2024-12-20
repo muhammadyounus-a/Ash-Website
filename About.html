@@ -19,7 +19,7 @@
         <!-- navbar section -->
         <header>
             <div class="logo">
-                <a href="#"><img class="main-logo" src="asset/image/Logo-Black.jpg" alt=""></a>
+                <a href="#"><img class="main-logo" src="asset/image/logo-black.svg" alt=""></a>
             </div>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close" class="header__close" id="close-menu"></ion-icon>
@@ -142,6 +142,7 @@
                 <div class="d-flex justify-content-between">
                     <div class="logo">
                         <div class="" id="lottie-container"></div>
+                        <p class="mt-3">webseek020@gmail.com</p>
                     </div>
                     <ul class="footer-nav">
                         <li class=""><a href="#">AL Tools</a></li>
@@ -153,8 +154,9 @@
                 </div>
                 <div class="line mt-5"></div>
                 <div class="copyright mt-5">
-                    <p>© 2024 — Copyright</p>
+                    <p>webseekai.com Copyright—© 2024</p>
                     <div class="">
+                        <button>G MAIL</button>
                         <button>LINKEDIN</button>
                         <button>INSTAGRAM</button>
                     </div>
@@ -173,13 +175,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     <script>
         const container = document.getElementById('lottie-container');
+        
         const animation = lottie.loadAnimation({
             container: container,
             renderer: 'svg',
-            loop: false,
-            autoplay: true,
+            loop: false, // Set to false as requested
+            autoplay: false, // Prevent autoplay
             path: './asset/Footer-icon.json'
         });
+
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animation.play(); // Play animation when in view
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when 50% of the container is visible
+        });
+
+        observer.observe(container);
       </script>
 </body>
 
