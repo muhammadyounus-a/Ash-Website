@@ -55,6 +55,7 @@ header.sticky {
     padding: 15px 30px 15px 30px;
     background-color: #fff;
     border-bottom: 1px rgba(255, 255, 255, 0.20) solid !important;
+    box-shadow: none !important;
 }
 
 header .logo {
