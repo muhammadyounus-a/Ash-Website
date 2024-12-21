@@ -66,78 +66,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-/* newBlog-section css */
-
-.newBlog-section {
-    margin-top: 100px;
-    background-color: #010102;
-    padding: 60px 0px 100px 0px;
-}
-
-.articl-btn button {
-    padding: 10px 24px;
-    background: white;
-    border: 0px;
-    color: #000;
-    width: 230px;
-}
-
-.newBlog-section .container h3 {
-    color: rgba(255, 255, 255, 0.90); 
-    font-size: 24px; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 500;
-}
-
-.newBlog-section .container p {
-    color: #6A6A6A; 
-    font-size: 18px; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 400; 
-    letter-spacing: 0.18px;
-}
-
-.newBlog-section .container .card {
-    background-color: transparent;
-    text-align: left;
-    border: 0px;
-}
-
-.newBlog-section .container .card h3 {
-    color: rgba(255, 255, 255, 0.90); 
-    font-size: 18px; 
-    font-family: "Inter", sans-serif; 
-    font-weight: 400;
-    letter-spacing: 0.18px;
-    line-height: 27px;
-}
-
-.blog-section-card {
+.brand-img {
+    width: 170px;
+    height: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow-x: auto; 
-    overflow-y: hidden; 
-    width: 100%;
-    gap: 1rem; 
-    scroll-behavior: smooth;
-    padding: 0;
-}
-
-.blog-section-card .card {
-    flex-shrink: 0;
-    width: 32rem;
-}
-
-.blog-section-card::-webkit-scrollbar {
-    display: none;
-}
-
-.blog-section-card {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    align-items: center;
 }
 
 /* media query starting */
@@ -170,66 +106,80 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+
+    .brand-img {
+        width: 170px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media all and (max-width:768px) {
-
     /* banner section css */
 
     .banner-section {
         margin-top: 100px;
     }
-    
+
+    .banner-section .container h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .banner-section .container p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
     .banner-section .container .card {
         border-radius: 0px;
-        padding: 10px;
+        padding: 20px 5px;
     }
-    
+
     .datas-area {
+        margin-top: 30px;
+    }
+
+    .mission h2 {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .mission p {
+        font-family: "Inter", sans-serif;
+        color: #efefefb2 !important;
+        margin-top: 30px !important;
+    }
+
+    .vission h2 {
+        color: #000;
+        font-weight: 300;
+    }
+
+    .vission p {
+        font-family: "Inter", sans-serif;
+        color: #000 !important;
+        margin-top: 30px !important;
+    }
+
+    /* brand-section css */
+
+    .brand-section {
         margin-top: 40px;
     }
-    
-    /* brand-section css */
-    
-    .brand-section {
-        margin-top: 60px;
-    }
-    
+
     .brand-main {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
     }
 
     .brand-img {
-        width: 150px;
-    }
-    
-    /* newBlog-section css */
-    
-    .newBlog-section {
-        margin-top: 100px;
-        background-color: #010102;
-        padding: 60px 0px;
-    }
-    
-    .newBlog-section .container h3 {
-        color: #fff;
-    }
-    
-    .newBlog-section .container p {
-        color: #ffffffc5;
-        font-family: "Inter", sans-serif;
-    }
-    
-    .newBlog-section .container .card {
-        background-color: transparent;
-        text-align: left;
-        border: 0px;
-    }
-    
-    .newBlog-section .container .card h3 {
-        color: #fff;
-        font-size: 22px;
+        width: 140px;
+        height: 80px;
+        display: flex;
+        align-items: center;
     }
 }
