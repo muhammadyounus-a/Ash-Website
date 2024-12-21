@@ -1,7 +1,14 @@
+body {
+    font-family: "Metrophobic", sans-serif;
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
 /* banner section css */
 
 .banner-section {
     margin-top: 200px;
+    padding-bottom: 100px;
 }
 
 .banner-section .container h1 {
