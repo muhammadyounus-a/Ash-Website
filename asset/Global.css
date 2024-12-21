@@ -136,6 +136,7 @@ header.sticky ul li a {
     color: #fff;
     border: 1px solid #1A1A1A;
     cursor: pointer;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
