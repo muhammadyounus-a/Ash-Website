@@ -268,7 +268,6 @@
 .items-parent {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
     flex-wrap: wrap;
     padding: 0;
 }
@@ -277,8 +276,8 @@
     border: 1px #F0F0F0 solid;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 550px;
+    justify-content: center;
+    width: 32.5%;
     height: 140px;
 }
 
@@ -292,8 +291,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px; 
-    height: 100%;
+    width: 140px; 
+    height: 140px;
 }
 
 .items-child-img img {
@@ -303,14 +302,14 @@
 
 .items-child h4 {
     color: rgba(0, 0, 0, 0.90); 
-    font-size: 18px; 
+    font-size: 19px; 
     font-family: "Inter", sans-serif; 
     font-weight: 500;
 }
 
 .items-child h6 {
     color: rgba(0, 0, 0, 0.70); 
-    font-size: 14px; 
+    font-size: 15px; 
     font-family: "Inter", sans-serif; 
     font-weight: 400;
 }
@@ -319,6 +318,7 @@
     color: rgba(0, 0, 0, 0.50);
     font-family: "Inter", sans-serif; 
     font-weight: 400;
+    font-size: 13px;
 }
 
 .seeMore-btn {
@@ -395,6 +395,7 @@
 
 .contribution-section {
     margin-top: 100px;
+    padding-bottom: 100px;
 }
 
 .contribution-section .container {
@@ -544,6 +545,18 @@
         background-color: rgba(0, 0, 0, 0.04);
         padding: 30px 0px;
         height: 15vh;
+    }
+
+    /* Popup content */
+    .popup-content {
+        background-color: #fff;
+        padding: 30px 20px;
+        border-radius: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 90%;
+        width: 70%;
+        text-align: center;
+        animation: fadeIn 0.3s ease;
     }
 
     /* contribution-section css */
@@ -700,6 +713,18 @@
     
     .swiper-pagination-bullet-active {
         background-color: #000 !important;
+    }
+
+    /* Popup content */
+    .popup-content {
+        background-color: #fff;
+        padding: 30px 20px;
+        border-radius: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 90%;
+        width: 98%;
+        text-align: center;
+        animation: fadeIn 0.3s ease;
     }
     
     /* similarTools-section css */
