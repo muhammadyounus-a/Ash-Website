@@ -73,8 +73,7 @@
 }
 
 .input-box button {
-    height: 65px;
-    width: 65px;
+    padding: 15px;
     color: #fff;
     border: 1px solid #000;
     white-space: nowrap; 
@@ -410,7 +409,7 @@
 /* newBlog-section css */
 
 .newBlog-section {
-    margin-top: 0px;
+    margin-top: 0px !important;
     background-color: #010102;
     padding: 60px 0px;
     position: relative;
