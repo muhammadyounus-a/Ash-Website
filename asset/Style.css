@@ -468,7 +468,8 @@
     }
 
     .box-card {
-        border: 1px solid #00000091;
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
         border-radius: 0px;
         padding: 6px 10px 0px 10px;
         width: 49%;
@@ -593,7 +594,8 @@
     }
 
     .box-card {
-        border: 1px solid #00000091;
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
         border-radius: 0px;
         padding: 6px 10px 0px 10px;
         width: 49%;
@@ -753,7 +755,8 @@
     }
 
     .box-card {
-        border: 1px solid #00000091;
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
         border-radius: 0px;
         padding: 6px 10px 0px 10px;
         width: 100%;
@@ -765,11 +768,11 @@
     }
 
     .input-box input {
-        border: 1px solid #00000091;
-        outline: #00000091;
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
         padding: 15px 20px;
         background-color: transparent;
-        width: 100%; 
+        width: 100%;
     }
 
     /* all-items css */
