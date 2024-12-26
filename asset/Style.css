@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: end;
     margin-top: 80px;
-    /* position: sticky;
-    top: 92px; */
+    position: sticky;
+    top: 92px;
 }
 
 .banner-section .container h1 {
@@ -84,56 +84,35 @@
 /* side bar css */
 
 .sidebarNav {
-    outline: 0px solid;
-    width: 64px; 
-    height: auto;
-    transition: 0.3s;
     position: fixed;
-    right: -5%; 
-    transform: translateX(50%);
+    right: 0px;
     top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: 3000;
-    overflow: hidden;
+    transform: translateY(-50%);
+    width: 64px;
+    height: auto;
     background: white;
-    box-shadow: 0px 0px 23.5px rgba(0, 0, 0, 0.10); 
     border: 1px rgba(0, 0, 0, 0.10) solid;
     font-size: 13px;
-}
-
-.sidebarNavIn {
-    right: -30px;
-    margin-right: 0px;
-    opacity: 1;
+    z-index: 3000;
 }
 
 .sidebarNavItem {
     width: 100%;
     height: 40px;
-    outline: 0px;
-    border: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #aaa;
-    border: 0px solid white;
-    transition: 0.3s;
-    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
     font-size: 12px;
     margin-bottom: 2px;
     color: rgba(0, 0, 0, 0.50);
     font-family: roboto, arial, sans-serif;
     font-weight: 100;
-    padding: 0;
 }
 
-.sidebarNav a{
+.sidebarNav a {
     text-decoration: none;
-}
-
-.area {
-    height: auto;
 }
 
 /* all-items css */
@@ -141,8 +120,8 @@
 .all-items {
     padding-top: 50px;
     background-color: #fff;
-    /* position: relative;
-    z-index: 100; */
+    position: relative;
+    z-index: 100;
     padding-bottom: 100px;
 }
 
@@ -583,6 +562,8 @@
         align-items: center;
         justify-content: center;
         margin-top: 0px;
+        position: sticky;
+        top: 50px;
     }
 
     .box {
@@ -734,7 +715,10 @@
 }
 
 @media all and (max-width:768px) {
-
+    /* side bar */
+    .sidebarNav {
+        display: none;
+    }
     /* banner section css */
 
     .banner-section {
@@ -743,7 +727,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 0px;
+        position: sticky;
+        top: 0px;
     }
 
     .box {
