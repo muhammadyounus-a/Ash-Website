@@ -2926,18 +2926,30 @@
             const sidebarNav = $(".sidebarNav");
             const sidebarNavItems = $(".sidebarNavItem");
             const sidebarNavSections = $(".area");
+            const allItemsSection = $("#allItems");
+
+            sidebarNav.hide();
 
             // Function to handle sidebar visibility on scroll
             $(window).on("scroll", function () {
                 const scrollTop = $(this).scrollTop();
                 const topBot = topSec.offset().top + topSec.outerHeight();
                 const endPos = endSection.offset().top;
+                const allItemsTop = allItemsSection.offset().top;
+                const allItemsBottom = allItemsTop + allItemsSection.outerHeight();
 
                 // Toggle sidebar visibility
                 if (scrollTop > topBot && scrollTop < endPos) {
                     sidebarNav.addClass("sidebarNavIn");
+                    sidebarNav.show();
                 } else {
                     sidebarNav.removeClass("sidebarNavIn");
+                    sidebarNav.hide();
+                }
+
+                // Additional logic to show the sidebar in the all-items section
+                if (scrollTop >= allItemsTop && scrollTop < allItemsBottom) {
+                    sidebarNav.show(); // Ensure sidebar is visible in "all-items"
                 }
 
                 // Highlight active section in the sidebar
