@@ -33,6 +33,13 @@ a {
     fill: white !important;
 }
 
+.no-scroll {
+    overflow: hidden;
+    position: fixed; /* Prevent body scroll */
+    width: 100%;
+    height: 100%;
+}
+
 /* Navbar section */
 
 header {
