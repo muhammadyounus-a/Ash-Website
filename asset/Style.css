@@ -98,44 +98,34 @@
 /* Popup content */
 .popup-content {
     background-color: #fff;
-    padding: 30px 20px;
+    padding: 0px;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90%;
-    width: 28%;
+    width: 50%;
     text-align: center;
     animation: fadeIn 0.3s ease;
 }
 
+.continue-popup {
+    background-color: #000 !important;
+    color: white !important; 
+    font-size: 14px !important; 
+    font-family: "Metrophobic", sans-serif !important; 
+    font-weight: 500 !important; 
+    text-transform: uppercase !important;
+    padding: 10px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
 .popup-content .popup-heading {
+    background-image: url('image/PopUp-img.webp');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
-}
-
-.popup-content .popup-heading h5 {
-     color: black; 
-     font-size: 20px; 
-     font-family: "Inter", sans-serif; 
-     font-weight: 400; 
-     text-transform: uppercase;
-}
-
-.popup-content h5{
-    color: black; 
-     font-size: 20px; 
-     font-family: "Inter", sans-serif; 
-     font-weight: 400; 
-     text-transform: uppercase;
-     text-align: left;
-}
-
-.popup-content .submit-btn {
-    background-color: #000;
-    color: #fff;
-    border: 0px;
-    padding: 10px 35px;
-    display: flex;
-    justify-content: flex-start;
+    padding: 50px 20px 40px 20px;
 }
 
 .popup-content .popup-heading button {
@@ -146,29 +136,8 @@
     justify-content: center;
     margin-top: -10px;
     font-size: 26px;
-    font-weight: 400;
-}
-
-.popup-content .rating-star {
-    display: flex;
-}
-
-.popup-content .rating-star-bg {
-    width: 51.84px; 
-    height: 51.84px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1.52px #E4E4E4 solid;
-}
-
-.popup-content .rating-star-bg button{
-    background-color: transparent;
-    border: 0px;
-}
-
-.popup-content .rating-star-bg i {
-    color: #0000003a;
+    font-weight: 200;
+    color: #fff;
 }
 
 /* side bar css */
