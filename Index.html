@@ -30,15 +30,44 @@
                     <li class="nav__item"><a href="#" class="nav__link">Tools</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Community</a></li>
-                    <a href=""><button class="Contribute-btn-tab"><i class="fa fa-plus"></i> Contribute</button></a>
+                    <a href="#"><button onclick="popUp()" class="Contribute-btn-tab"><i class="fa fa-plus"></i> Contribute</button></a>
                 </ul>
             </nav>
             <div class="navBtn">
-                <a href=""><button class="signUp-btn">Sign up</button></a>
-                <a href=""><button class="Contribute-btn"><i class="fa fa-plus"></i> Contribute</button></a>
+                <a href="#"><button class="signUp-btn">Sign up</button></a>
+                <a href="#"><button onclick="popUp()" class="Contribute-btn"><i class="fa fa-plus"></i> Contribute</button></a>
             </div>
             <ion-icon name="menu" class="header__toggle" id="toggle-menu"></ion-icon>
         </header>
+        <!-- popup -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <div class="popup-heading">
+                    <h5>Rate your experience</h5>
+                    <button onclick="closePopup()"><i class="fa-solid fa-xmark" id="closePopup"></i></button>
+                </div>
+                <div class="rating-star mt-3">
+                    <div class="rating-star-bg">
+                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
+                    </div>
+                    <div class="rating-star-bg ms-3">
+                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
+                    </div>
+                    <div class="rating-star-bg ms-3">
+                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
+                    </div>
+                    <div class="rating-star-bg ms-3">
+                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
+                    </div>
+                    <div class="rating-star-bg ms-3">
+                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
+                    </div>
+                </div>
+                <h5 class="mt-4 mb-3">feed back</h5>
+                <textarea rows="5" style="width: 100%; padding: 10px; border: 1px #E4E4E4 solid; border-radius: 0px;outline: none;" placeholder="Write you feed back..."></textarea>
+                <button class="submit-btn mt-4 ">SUBMIT</button>
+            </div>
+        </div>
         <!-- side bar section -->
         <div class="sidebarNav">
             <a class="scrollLink" href="#area1">
@@ -2981,6 +3010,18 @@
                 }
             });
         });
+
+        // popup code
+
+        function popUp() {
+            document.getElementById('popup').style.display = 'flex';
+            document.body.classList.add('no-scroll'); // Disable scrolling
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.body.classList.remove('no-scroll'); // Re-enable scrolling
+        }
 
     </script>
 </body>
