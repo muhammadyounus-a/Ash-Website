@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- style link -->
+    <link rel="stylesheet" href="asset/ProfilePage.css">
+    <link rel="stylesheet" href="asset/Global.css">
+</head>
+
+<body>
+    <section>
+        <!-- navbar section -->
+        <header>
+            <div class="logo">
+                <a href="#"><img class="main-logo" src="asset/image/logo-black.svg" alt=""></a>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <div class="">
+                    <img class="header-img" src="asset/image/nav-menu-img.svg" alt="">
+                    <ion-icon name="close" class="header__close" id="close-menu"></ion-icon>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">categories</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Community</a></li>
+                    <a href="#"><button onclick="popUp()" class="Contribute-btn-tab"><i class="fa fa-plus"></i> Contribute</button></a>
+                </ul>
+            </nav>
+            <div class="navBtn">
+                <a href="#"><button onclick="popUp()" class="Contribute-btn"><i class="fa fa-plus"></i> Contribute</button></a>
+                <a href="#"><img class="ms-3" src="asset/image/Profile-page/saved-menuBar.svg" alt=""></a>
+            </div>
+            <ion-icon name="menu" class="header__toggle" id="toggle-menu"></ion-icon>
+        </header>
+        <!-- banner section -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="row">
+                    <div class="profile-name">
+                        <div class="">
+                            <img src="asset/image/Profile-page/profile-img.webp" alt="">
+                        </div>
+                        <div class="ms-3">
+                            <h2>muhammed ajmal</h2>
+                            <p>your tools 320</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav-items">
+                        <ul>
+                            <li>
+                                <a href="#" class="nav-link active" data-target="ai-tools">Saved</a>
+                                <div class="nav-line"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link" data-target="web-sites">You Added</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row sections">
+                            <div class="section active-section" id="ai-tools">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="asset/image/Profile-page/saved-img.svg" alt="">
+                                        <h4 class="mt-3">Save and Organize Your Inspiration</h4>
+                                        <p class="mt-3">"Looks like you haven’t saved anything yet. Start exploring and keep your favorite tools, websites, and resources here."</p>
+                                        <button>Explore now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section" id="web-sites" style="display: none;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="asset/image/Profile-page/added-img.svg" alt="">
+                                        <h4 class="mt-3">Your Contributions Await!</h4>
+                                        <p class="mt-3">"It looks like you haven’t added any contributions yet. Share your favourite tools, websites, or resources with the community."</p>
+                                        <button>Add Your First Contribution</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- footer section -->
+        <footer class="footer-section">
+            <div class="line"></div>
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="logo">
+                        <div class="" id="lottie-container"></div>
+                        <p class="mt-3 webseek">webseek020@gmail.com</p>
+                    </div>
+                    <ul class="footer-nav">
+                        <li class=""><a href="#">AL Tools</a></li>
+                        <li class=""><a href="#">Features</a></li>
+                        <li class=""><a href="#">Community</a></li>
+                        <li class=""><a href="#">About</a></li>
+                        <li class=""><a href="#">Blog</a></li>
+                    </ul>    
+                </div>
+                <div class="line mt-5"></div>
+                <div class="copyright mt-5">
+                    <p>webseekai.com Copyright—© 2024</p>
+                    <div class="copyright-button">
+                        <button>G MAIL</button>
+                        <button>LINKEDIN</button>
+                        <button>INSTAGRAM</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <!-- bootstrap link script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- navbar script js -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- navbar script js end -->
+    <!-- footer icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script>
+        const container = document.getElementById('lottie-container');
+
+        const animation = lottie.loadAnimation({
+            container: container,
+            renderer: 'svg',
+            loop: false, // Set to false as requested
+            autoplay: false, // Prevent autoplay
+            path: './asset/Footer-icon.json'
+        });
+
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animation.play(); // Play animation when in view
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when 50% of the container is visible
+        });
+
+        observer.observe(container);
+
+        // underline change code
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll(".nav-items .nav-link");
+            const navLine = document.querySelector(".nav-line");
+
+            function updateNavLine() {
+                const activeLink = document.querySelector(".nav-link.active");
+                if (activeLink) {
+                    const rect = activeLink.getBoundingClientRect();
+                    const parentLi = activeLink.parentElement;
+                    const containerRect = parentLi.parentElement.getBoundingClientRect();
+                    navLine.style.width = `${rect.width}px`;
+                    navLine.style.left = `${rect.left - containerRect.left - 20}px`;
+                }
+            }
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    navLinks.forEach((nav) => nav.classList.remove("active"));
+                    link.classList.add("active");
+                    updateNavLine();
+                });
+            });
+
+            // Update the underline on initial page load
+            updateNavLine();
+        });
+        // Get all navigation links and sections
+        const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+
+            // Add click event to each navigation link
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Remove 'active' class from all links and hide all sections
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    sections.forEach(section => section.style.display = 'none');
+
+                    // Add 'active' class to the clicked link
+                    link.classList.add('active');
+
+                    // Show the targeted section
+                    const targetId = link.getAttribute('data-target');
+                    document.getElementById(targetId).style.display = 'block';
+                });
+            });
+    </script>
+</body>
+</html>
