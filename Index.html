@@ -46,9 +46,31 @@
                     <button onclick="closePopup()"><img id="closePopup" src="asset/image/clouse-img.svg" alt=""></button>
                     <button class="continue-popup">continue <span><img class="ms-3 mb-1" src="asset/image/arrow-left.svg" alt=""></span></button>
                 </div>
-                <div class="popUp-datas">
-                    
-                </div>
+                <form class="popUp-datas">
+                    <label>Resource Type</label>
+                    <select class="mt-2" aria-label="Default select example">
+                        <option selected>Select resource</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="form-group mt-3">
+                        <label for="resource-type">Resource Type</label>
+                        <input type="text" id="resource-type" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="use-case">Use Case</label>
+                        <input type="text" id="use-case" placeholder="Enter use case">
+                    </div>
+                    <div class="form-group">
+                        <label for="product-url">Product URL</label>
+                        <input type="text" id="product-url" placeholder="Enter product URL">
+                    </div>
+                    <div class="form-group">
+                        <label for="your-name">Your Name</label>
+                        <input type="text" id="your-name" placeholder="Enter your name">
+                    </div>
+                </form>
             </div>
         </div>
         <!-- side bar section -->
