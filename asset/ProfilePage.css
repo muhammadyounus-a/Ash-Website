@@ -1,6 +1,6 @@
-/* banner-section */
+/* profile-banner-section */
 
-.banner-section {
+.profile-banner-section {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@
         height: 40px;
     }
 
-    .banner-section {
+    .profile-banner-section {
         height: 70vh;
         display: flex;
         justify-content: center;
@@ -131,7 +131,7 @@
         height: 35px;
     }
 
-    .banner-section {
+    .profile-banner-section {
         height: 100vh;
         display: flex;
         justify-content: center;
