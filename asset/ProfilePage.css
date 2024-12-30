@@ -30,6 +30,7 @@
 
 .nav-items {
     position: relative;
+    padding: 0px !important;
 }
 
 .nav-items ul {
@@ -40,7 +41,7 @@
 }
 
 .nav-items ul li {
-    margin: 0 20px;
+    margin: 0px;
     font-size: 18px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -101,4 +102,68 @@
     font-family: sans-serif; 
     font-weight: 500; 
     text-transform: capitalize;
+}
+
+@media all and (max-width:900px) { 
+    .saved-img {
+        position: absolute;
+        right: 80px;
+        top: 12px;
+        width: 40px; 
+        height: 40px;
+    }
+
+    .banner-section {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+    }
+}
+
+@media all and (max-width:768px) { 
+
+    .saved-img {
+        position: absolute;
+        right: 50px;
+        top: 8px;
+        width: 35px; 
+        height: 35px;
+    }
+
+    .banner-section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .profile-name h2 {
+        color: black; 
+        font-size: 26px; 
+        font-family: sans-serif; 
+        font-weight: 400; 
+        text-transform: capitalize;
+        word-wrap: break-word;
+    }
+    
+    .nav-items ul li .nav-line {
+        height: 3px;
+        width: 0;
+        background-color: #000;
+        position: absolute;
+        bottom: -5px;
+        left: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .section .card {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px;
+        margin-top: 70px;
+    }
 }
