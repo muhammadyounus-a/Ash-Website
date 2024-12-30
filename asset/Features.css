@@ -84,6 +84,10 @@
         padding: 0px !important;
     }
 
+    .feature-banner-section .card .card-body {
+        padding: 0px !important;
+    }
+
     /* newBlog-section css */
 
     .newBlog-section {
