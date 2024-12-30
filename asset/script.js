@@ -58,3 +58,17 @@ function closePopup() {
     document.getElementById('popup').style.display = 'none';
     document.body.classList.remove('no-scroll'); // Re-enable scrolling
 }
+
+function toggleDropdown() {
+    const content = document.querySelector('.dropdown-input-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+
+function selectItem(value) {
+    const selectedValue = document.getElementById('selected-value');
+    selectedValue.textContent = value;
+
+    // Hide the dropdown after selection
+    const content = document.querySelector('.dropdown-input-content');
+    content.style.display = 'none';
+}

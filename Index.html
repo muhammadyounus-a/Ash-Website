@@ -48,12 +48,26 @@
                 </div>
                 <form class="popUp-datas">
                     <label>Resource Type</label>
-                    <select class="mt-2" aria-label="Default select example">
-                        <option selected>Select resource</option>
-                        <option value="1">AI Tool</option>
-                        <option value="2">Website</option>
-                        <option value="3">YouTube Video</option>
-                    </select>
+                    <div class="dropdown-input">
+                        <div class="dropdown-input-header" onclick="toggleDropdown()">
+                            <span id="selected-value">Select Resource</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-input-content">
+                            <div class="dropdown-input-item" onclick="selectItem('AI Tool')">
+                                <span>AI Tool</span>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                            <div class="dropdown-input-item" onclick="selectItem('Website')">
+                                <span>Website</span>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                            <div class="dropdown-input-item" onclick="selectItem('YouTube Video')">
+                                <span>YouTube Video</span>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group mt-3">
                         <label for="resource-type">Resource Type</label>
                         <input type="text" id="resource-type" placeholder="Enter name">
