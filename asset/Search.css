@@ -64,7 +64,11 @@
 /* all-items css */
 
 .all-items {
-    margin-top: 100px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    padding-bottom: 100px;
 }
 
 .all-items .all-items-data {
@@ -288,8 +292,10 @@
 /* contribution-section css */
 
 .contribution-section {
-    margin-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
 }
 
 .contribution-section .container {
@@ -439,7 +445,7 @@
     /* contribution-section css */
 
     .contribution-section {
-        margin-top: 80px;
+        margin-top: 0px;
     }
 
     .contribution-section .container br {
