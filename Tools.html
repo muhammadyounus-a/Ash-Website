@@ -217,22 +217,19 @@
                                     <h5>Rate your experience</h5>
                                     <button onclick="closeRating()"><i class="fa-solid fa-xmark" id="closeRating"></i></button>
                                 </div>
-                                <div class="rating-star mt-3">
-                                    <div class="rating-star-bg">
-                                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
-                                    </div>
-                                    <div class="rating-star-bg ms-3">
-                                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
-                                    </div>
-                                    <div class="rating-star-bg ms-3">
-                                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
-                                    </div>
-                                    <div class="rating-star-bg ms-3">
-                                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
-                                    </div>
-                                    <div class="rating-star-bg ms-3">
-                                        <button><img src="asset/image/Tools/Star-img.svg" alt=""></button>
-                                    </div>
+                                <div class="parent-container">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" required>
+                                        <label for="star5" title="5 stars">&#9733;</label>
+                                        <input type="radio" id="star4" name="rate" value="4">
+                                        <label for="star4" title="4 stars">&#9733;</label>
+                                        <input type="radio" id="star3" name="rate" value="3">
+                                        <label for="star3" title="3 stars">&#9733;</label>
+                                        <input type="radio" id="star2" name="rate" value="2">
+                                        <label for="star2" title="2 stars">&#9733;</label>
+                                        <input type="radio" id="star1" name="rate" value="1">
+                                        <label for="star1" title="1 star">&#9733;</label>
+                                    </div> 
                                 </div>
                                 <h5 class="mt-4 mb-3">feed back</h5>
                                 <textarea rows="5" style="width: 100%; padding: 10px; border: 1px #E4E4E4 solid; border-radius: 0px;outline: none;" placeholder="Write you feed back..."></textarea>
@@ -364,7 +361,7 @@
         </section>
         <!-- similar tools section -->
         <section class="similarTools-section">
-            <div class="container p-0">
+            <div class="container">
                 <div class="row">
                     <h2>similar tools</h2>
                     <div class="items-parent">
@@ -457,8 +454,8 @@
         <section class="ai-section">
             <div class="container p-0">
                 <div class="row">
-                    <h5>AI OF MONTH</h5>
-                    <p class="mt-1">Discover the top AI tool of the month, carefully selected for its innovation and ability to enhance productivity, streamline workflows, and help you achieve your goals more efficiently.</p>
+                    <h5 class="p-0">AI OF MONTH</h5>
+                    <p class="mt-1 p-0">Discover the top AI tool of the month, carefully selected for its innovation and ability to enhance productivity, streamline workflows, and help you achieve your goals more efficiently.</p>
                     <div class="container">
                         <div class="row border-line">
                             <div class="col-lg-4 bg-gray">
@@ -574,10 +571,10 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1.2,
+                    slidesPerView: 1.1,
                     spaceBetween: 10,
                 },
-                640: {
+                768: {
                     slidesPerView: 1.6,
                     spaceBetween: 40,
                 },
