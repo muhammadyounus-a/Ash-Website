@@ -209,6 +209,12 @@ body {
 }
 
 @media all and (max-width:768px) {
+
+    .banner-section .banner-img {
+        height: 23vh !important;
+        width: 100%;
+    }
+
     .datas-div p {
         color: #666666; 
         font-size: 14px; 

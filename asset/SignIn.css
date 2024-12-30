@@ -224,6 +224,11 @@ body {
     .banner-section .heading {
         display: none;
     }
+
+    .heading-text-tab img {
+        height: auto !important;
+        width: 120px !important;
+    }
     
     .banner-section .banner-img {
         height: 15vh !important;
@@ -252,7 +257,12 @@ body {
     .heading-text-tab {
         display: flex;
         justify-content: space-between;
-        padding: 20px 0px 0px 0px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .heading-text-tab img {
+        height: auto !important;
+        width: 90px !important;
     }
 
     .datas-div-text {
