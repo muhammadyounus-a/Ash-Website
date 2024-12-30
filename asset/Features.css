@@ -1,31 +1,31 @@
 /* banner section css */
 
-.banner-section {
+.feature-banner-section {
     margin-top: 200px;
 }
 
-.banner-section .container h1 {
+.feature-banner-section .container h1 {
     color: black;
     margin-top: 40px;
 }
 
-.banner-section .container p span {
+.feature-banner-section .container p span {
     font-weight: bold;
     font-family: "Inter", sans-serif;
 }
 
-.banner-section .container p {
+.feature-banner-section .container p {
     color: #000000e0;
     font-family: "Inter", sans-serif;
 }
 
-.banner-section .container .card {
+.feature-banner-section .container .card {
     background-color: transparent;
     text-align: left;
     border: 0px;
 }
 
-.banner-section .container .card h3 {
+.feature-banner-section .container .card h3 {
     color: #000;
     font-size: 22px;
 }
@@ -62,11 +62,11 @@
 
     /* banner section css */
 
-    .banner-section {
+    .feature-banner-section {
         margin-top: 100px;
     }
 
-    .banner-section .banner-img {
+    .feature-banner-section .banner-img {
         height: 150px;
     }
 
@@ -76,11 +76,11 @@
 
     /* banner section css */
 
-    .banner-section {
+    .feature-banner-section {
         margin-top: 100px;
     }
 
-    .banner-section .banner-img {
+    .feature-banner-section .banner-img {
         padding: 0px !important;
     }
 
