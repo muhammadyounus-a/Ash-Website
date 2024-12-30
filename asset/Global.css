@@ -160,6 +160,89 @@ header.sticky ul li a {
     transform: rotate(45deg);
 }
 
+/* banner section css */
+
+.banner-section {
+    height: 60vh;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 80px;
+    position: sticky;
+    top: 92px;
+}
+
+.banner-section .container h1 {
+    text-align: center; 
+    color: black; 
+    font-family: "Metrophobic", sans-serif; 
+    font-weight: 500; 
+    color: black;
+    line-height: 44.80px;
+    text-transform: capitalize;
+}
+
+.box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-card {
+    border-radius: 0px;
+    padding: 20px 20px 10px 20px;
+    width: 35%;
+    background: #FEFEFE; 
+    border: 1px #E4E4E7 solid;
+    display: flex;
+    text-align: left;
+}
+
+.box-card p {
+    color: #09090B; 
+    font-size: 14px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400; 
+    line-height: 24px;
+}
+
+.box-card p span {
+    font-weight: 600;
+    color: #000;
+}
+
+.input-box {
+    display: flex;
+    width: 78%; 
+}
+
+.input-box input {
+    outline: #00000091;
+    padding: 0px 25px;
+    background-color: transparent;
+    width: 100%; 
+    border: 1px #DADADA solid;
+    background: #FEFEFE;
+}
+
+.input-box input::placeholder{
+    color: rgba(0, 0, 0, 0.70) !important; 
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.input-box button {
+    padding: 15px;
+    color: #fff;
+    border: 1px solid #000;
+    white-space: nowrap; 
+    font-size: 20px;
+    background: #030303;
+}
+
 /* Popup overlay */
 .popup-overlay {
     display: none;
@@ -522,6 +605,40 @@ input[type="text"]:focus {
     }
 }
 
+@media all and (max-width:990px) {
+    /* banner section css */
+
+    .banner-section {
+        height: 80vh;
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box-card {
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
+        border-radius: 0px;
+        padding: 6px 10px 0px 10px;
+        width: 49%;
+    }
+
+    .input-box {
+        display: flex;
+        width: 100%; 
+    }
+}
+
 @media all and (max-width:900px) {
 
     /* navbar css */
@@ -667,6 +784,40 @@ input[type="text"]:focus {
         padding: 4px 20px 4px 20px;
     }
 
+    /* banner section css */
+
+    .banner-section {
+        height: 50vh;
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        position: sticky;
+        top: 50px;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box-card {
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
+        border-radius: 0px;
+        padding: 6px 10px 0px 10px;
+        width: 49%;
+    }
+
+    .input-box {
+        display: flex;
+        width: 100%; 
+    }
+
     /* Popup content */
     .popup-content {
         background-color: #fff;
@@ -792,6 +943,48 @@ input[type="text"]:focus {
         right: 50px;
         top: 11px;
         padding: 4px 10px 2px 10px !important;
+    }
+
+    /* banner section css */
+
+    .banner-section {
+        height: 100vh;
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        position: sticky;
+        top: 0px;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .box-card {
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
+        border-radius: 0px;
+        padding: 6px 10px 0px 10px;
+        width: 100%;
+    }
+
+    .input-box {
+        display: flex;
+        width: 100%; 
+    }
+
+    .input-box input {
+        background: #FEFEFE; 
+        border: 1px #E4E4E7 solid;
+        padding: 15px 20px;
+        background-color: transparent;
+        width: 100%;
     }
 
     /* newBlog-section css */

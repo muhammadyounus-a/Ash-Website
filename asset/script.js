@@ -16,6 +16,14 @@ closeMenu.addEventListener("click", () => {
 });
 // navbar script end //////////////////
 
+// button value added
+
+function setInputValue(button) {
+    const inputBox = document.getElementById('resourceInput');
+    const buttonText = button.querySelector('p').textContent.trim();
+    inputBox.value = buttonText;
+}
+
 // navitems underline changred 
 document.addEventListener("DOMContentLoaded", () => {
     const navItems = document.querySelectorAll(".nav-items li a");

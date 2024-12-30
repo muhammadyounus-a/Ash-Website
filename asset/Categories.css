@@ -1,70 +1,11 @@
-/* banner section css */
-
-.banner-section {
-    height: 90vh;
-    background-color: #F8F8F8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.banner-section .container h1 {
-    text-align: center; 
-    color: black; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 500; 
-}
-
-.box {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.box-card {
-    border: 1px solid #00000091;
-    border-radius: 0px;
-    padding: 6px 10px 0px 10px;
-    width: 40%;
-}
-
-.box-card p {
-    color: #00000091;
-}
-
-.box-card p span {
-    font-weight: 600;
-    color: #000;
-}
-
-.input-box {
-    display: flex;
-    width: 81.7%; 
-}
-
-.input-box input {
-    border: 1px solid #00000091;
-    outline: #00000091;
-    padding: 15px 20px;
-    background-color: transparent;
-    width: 100%; 
-}
-
-.input-box button {
-    padding: 15px 15px;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    white-space: nowrap; 
-}
-
 /* categories-section css */
 
 .categories-section {
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    padding-bottom: 100px;
 }
 
 .main-categories {
@@ -90,7 +31,11 @@
 /* design-section css */
 
 .design-section {
-    margin-top: 30px;
+    padding-top: 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    padding-bottom: 100px;
 }
 
 .main-design {
@@ -118,7 +63,11 @@
 /* ai-section css */
 
 .ai-section {
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
+    padding-bottom: 100px;
 }
 
 .ai-section p {
@@ -174,7 +123,10 @@
 /* contribution-section css */
 
 .contribution-section {
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100;
     padding-bottom: 100px;
 }
 
@@ -194,37 +146,6 @@
 /* media query starting */
 
 @media all and (max-width:900px) {
-
-    /* banner section css */
-
-    .banner-section {
-        height: 50vh;
-        background-color: #F8F8F8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0px;
-    }
-
-    .box {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .box-card {
-        border: 1px solid #00000091;
-        border-radius: 0px;
-        padding: 6px 10px 0px 10px;
-        width: 49%;
-    }
-
-    .input-box {
-        display: flex;
-        width: 100%; 
-    }
 
     /* categories-section css */
 
@@ -293,45 +214,6 @@
 }
 
 @media all and (max-width:768px) {
-
-    /* banner section css */
-
-    .banner-section {
-        height: 100vh;
-        background-color: #F8F8F8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .box {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .box-card {
-        border: 1px solid #00000091;
-        border-radius: 0px;
-        padding: 6px 10px 0px 10px;
-        width: 100%;
-    }
-
-    .input-box {
-        display: flex;
-        width: 100%; 
-    }
-
-    .input-box input {
-        border: 1px solid #00000091;
-        outline: #00000091;
-        padding: 15px 20px;
-        background-color: transparent;
-        width: 100%; 
-    }
 
     /* categories-section css */
 
