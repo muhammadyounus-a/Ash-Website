@@ -1,10 +1,10 @@
 /* banner section css */
 
-.banner-section {
-    margin-top: 200px;
+.about-banner-section {
+    margin-top: 200px !important;
 }
 
-.banner-section .container h1 {
+.about-banner-section .container h1 {
     color: black;
     font-size: 48px; 
     font-family: "Metrophobic", sans-serif; 
@@ -13,7 +13,7 @@
     margin-top: 30px;
 }
 
-.banner-section .container p {
+.about-banner-section .container p {
     color: rgba(0, 0, 0, 0.60); 
     font-size: 20px; 
     font-family: "Inter", sans-serif; 
@@ -22,12 +22,12 @@
     word-wrap: break-word;
 }
 
-.banner-section .container .card { 
+.about-banner-section .container .card { 
     background-color: #F7F7F7;
     border: 0px;
 }
 
-.banner-section .container .card {
+.about-banner-section .container .card {
     border-radius: 0px;
     padding: 20px;
 }
@@ -82,11 +82,11 @@
 
     /* banner section css */
 
-    .banner-section {
-        margin-top: 100px;
+    .about-banner-section {
+        margin-top: 130px !important;
     }
 
-    .banner-section .banner-img {
+    .about-banner-section .banner-img {
         height: 150px;
     }
     
@@ -118,21 +118,21 @@
 @media all and (max-width:768px) {
     /* banner section css */
 
-    .banner-section {
-        margin-top: 100px;
+    .about-banner-section {
+        margin-top: 100px !important;
     }
 
-    .banner-section .container h1 {
+    .about-banner-section .container h1 {
         font-size: 30px;
         margin-top: 20px;
     }
 
-    .banner-section .container p {
+    .about-banner-section .container p {
         font-size: 16px;
         line-height: 27px;
     }
 
-    .banner-section .container .card {
+    .about-banner-section .container .card {
         border-radius: 0px;
         padding: 20px 5px;
     }
