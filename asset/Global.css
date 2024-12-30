@@ -340,6 +340,13 @@ header.sticky ul li a {
     color: rgba(0, 0, 0, 1);
 }
 
+.popUp-datas select option {
+    width: 100% !important;
+    padding : 15px 20px 15px 10px;
+    border: 1px #E4E4E4 solid;
+    outline: none;
+}
+
 .popUp-datas input {
     padding : 15px 20px 15px 10px !important;
 }
