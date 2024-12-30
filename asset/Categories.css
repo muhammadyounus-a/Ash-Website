@@ -151,14 +151,10 @@
     /* categories-section css */
 
     .categories-section {
-        margin-top: 70px;
+        margin-top: 0px;
     }
 
     /* design-section css */
-
-    /* .design-section {
-        margin-top: 20px;
-    } */
 
     .main-design {
         display: flex;
@@ -228,13 +224,13 @@
     .main-categories {
         display: flex;
         flex-wrap: wrap;
-        gap: 2px;
+        gap: 10px;
         font-family: "Inter", sans-serif;
     }
 
     .categories {
         border: 1px solid #00000091;
-        padding: 2px 7px;
+        padding: 5px 7px;
         border-radius: 0px;
         transition: 0.3s;
     }
@@ -268,7 +264,7 @@
 
     .ai-section {
         margin-top: 0px !important;
-        padding-top: 60px !important;
+        padding: 60px 10px 60px 10px !important;
     }
 
     .bg-gray {
