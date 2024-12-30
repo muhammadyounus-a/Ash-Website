@@ -1,16 +1,16 @@
 /* banner section css */
 
-.banner-section {
+.tools-banner-section {
     margin-top: 150px;
 }
 
-.banner-section .navigation-menu {
+.tools-banner-section .navigation-menu {
     display: flex;
     padding: 0px;
     margin-top: 30px;
 }
 
-.banner-section .navigation-menu a {
+.tools-banner-section .navigation-menu a {
     text-decoration: none;
     margin: 0 5px;
     font-size: 18px; 
@@ -20,7 +20,7 @@
     color: rgba(0, 0, 0, 0.60)
 }
 
-.banner-section .visit-btn{
+.tools-banner-section .visit-btn{
     padding: 10px 30px;  
     background-color: #030303;
     color: #fff;
@@ -28,26 +28,26 @@
     height: 50px !important;
 }
 
-.banner-section .upload-btn {
+.tools-banner-section .upload-btn {
     padding: 10px 15px;  
     border: 1px rgba(0, 0, 0, 0.30) solid;
     height: 50px !important;
 }
 
-.banner-section .heading {
+.tools-banner-section .heading {
     display: flex;
     justify-content: space-between;
     padding: 0px;
 }
 
-.banner-section .all-items {
+.tools-banner-section .all-items {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     padding: 0px;
 }
 
-.banner-section .items {
+.tools-banner-section .items {
     height: 40px;
     width: fit-content;
     display: flex;
@@ -127,7 +127,7 @@
 }
 
 /* Popup overlay */
-.popup-overlay {
+.popup1-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -141,7 +141,7 @@
 }
 
 /* Popup content */
-.popup-content {
+.popup1-content {
     background-color: #fff;
     padding: 30px 20px;
     border-radius: 0px;
@@ -152,12 +152,12 @@
     animation: fadeIn 0.3s ease;
 }
 
-.popup-content .popup-heading {
+.popup1-content .popup1-heading {
     display: flex;
     justify-content: space-between;
 }
 
-.popup-content .popup-heading h5 {
+.popup1-content .popup1-heading h5 {
      color: black; 
      font-size: 20px; 
      font-family: "Inter", sans-serif; 
@@ -165,7 +165,7 @@
      text-transform: uppercase;
 }
 
-.popup-content h5{
+.popup1-content h5{
     color: black; 
      font-size: 20px; 
      font-family: "Inter", sans-serif; 
@@ -174,7 +174,7 @@
      text-align: left;
 }
 
-.popup-content .submit-btn {
+.popup1-content .submit-btn {
     background-color: #000;
     color: #fff;
     border: 0px;
@@ -183,7 +183,7 @@
     justify-content: flex-start;
 }
 
-.popup-content .popup-heading button {
+.popup1-content .popup1-heading button {
     background-color: transparent;
     border: 0px;
     display: flex;
@@ -194,11 +194,11 @@
     font-weight: 400;
 }
 
-.popup-content .rating-star {
+.popup1-content .rating-star {
     display: flex;
 }
 
-.popup-content .rating-star-bg {
+.popup1-content .rating-star-bg {
     width: 51.84px; 
     height: 51.84px;
     display: flex;
@@ -207,12 +207,12 @@
     border: 1.52px #E4E4E4 solid;
 }
 
-.popup-content .rating-star-bg button{
+.popup1-content .rating-star-bg button{
     background-color: transparent;
     border: 0px;
 }
 
-.popup-content .rating-star-bg i {
+.popup1-content .rating-star-bg i {
     color: #0000003a;
 }
 
@@ -398,7 +398,7 @@
 @media all and (max-width:900px) {
     /* banner section css */
 
-    .banner-section {
+    .tools-banner-section {
         height: 100%;
         display: flex;
         align-items: center;
@@ -532,7 +532,7 @@
     }
 
     /* Popup content */
-    .popup-content {
+    .popup1-content {
         background-color: #fff;
         padding: 30px 20px;
         border-radius: 0px;
@@ -572,11 +572,11 @@
 
     /* banner section css */
 
-    .banner-section {
+    .tools-banner-section {
         margin-top: 20px;
     }
     
-    .banner-section .navigation-menu a {
+    .tools-banner-section .navigation-menu a {
         text-decoration: none;
         margin: 0 5px;
         font-size: 14px; 
@@ -586,7 +586,7 @@
         color: rgba(0, 0, 0, 0.60)
     }
     
-    .banner-section .visit-btn{
+    .tools-banner-section .visit-btn{
         padding: 10px 30px;  
         background-color: #030303;
         color: #fff;
@@ -596,7 +596,7 @@
         margin-top: 10px;
     }
     
-    .banner-section .upload-btn {
+    .tools-banner-section .upload-btn {
         padding: 10px 15px;  
         border: 1px rgba(0, 0, 0, 0.30) solid;
         height: 50px !important;
@@ -604,23 +604,23 @@
         margin-top: 10px;
     }
     
-    .banner-section .heading {
+    .tools-banner-section .heading {
         display: block;
         padding: 0px;
     }
 
-    .banner-section .heading p {
+    .tools-banner-section .heading p {
         font-size: 14px;
     }
     
-    .banner-section .all-items {
+    .tools-banner-section .all-items {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
         padding: 0px;
     }
     
-    .banner-section .items {
+    .tools-banner-section .items {
         height: 40px;
         width: fit-content;
         display: flex;
@@ -700,7 +700,7 @@
     }
 
     /* Popup content */
-    .popup-content {
+    .popup1-content {
         background-color: #fff;
         padding: 30px 20px;
         border-radius: 0px;
