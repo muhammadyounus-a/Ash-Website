@@ -400,6 +400,12 @@ header.sticky ul li a {
         top: 12px;
         padding: 4px 20px 4px 20px;
     }
+
+    /* banner section css */
+
+    .blogMain-banner-section {
+        margin-top: 150px;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -498,6 +504,12 @@ header.sticky ul li a {
 
     .blogMain-banner-section {
         margin-top: 100px;
+        padding-bottom: 40px !important;
+    }
+
+    .blogMain-banner-section .banner-img {
+        height: 130px;
+        width: 100%;
     }
 
     .blogMain-banner-section .container {
@@ -521,7 +533,7 @@ header.sticky ul li a {
     }
 
     .blogMain-banner-section .business-img img {
-        height: 100% !important;
+        height: 150px !important;
         width: 100% !important;
         margin-top: 10px;
     }
