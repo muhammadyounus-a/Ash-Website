@@ -5,7 +5,7 @@
     background-color: #fff;
     position: relative;
     z-index: 100;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 .main-categories {
@@ -35,7 +35,7 @@
     background-color: #fff;
     position: relative;
     z-index: 100;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 .main-design {
@@ -67,7 +67,7 @@
     background-color: #fff;
     position: relative;
     z-index: 100;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
 .ai-section p {
@@ -155,9 +155,9 @@
 
     /* design-section css */
 
-    .design-section {
+    /* .design-section {
         margin-top: 20px;
-    }
+    } */
 
     .main-design {
         display: flex;
@@ -165,6 +165,7 @@
         flex-wrap: wrap;
         gap: 8px 0px; 
         font-family: "Inter", sans-serif;
+        /* padding-bottom: 100px; */
     }
 
     .design {
@@ -180,7 +181,8 @@
     /* ai-section css */
 
     .ai-section {
-        margin-top: 80px;
+        padding-top: 100px !important;
+        padding-bottom: 100px;
     }
 
     .bg-gray {
@@ -192,7 +194,7 @@
     /* contribution-section css */
 
     .contribution-section {
-        margin-top: 80px;
+        padding-top: 0px !important;
     }
 
     .contribution-section .container br {
@@ -219,6 +221,7 @@
 
     .categories-section {
         margin-top: 60px;
+        padding-top: 80px !important;
     }
 
     .main-categories {
@@ -238,7 +241,7 @@
     /* design-section css */
 
     .design-section {
-        margin-top: 30px;
+        margin-top: 0px !important;
     }
 
     .main-design {
@@ -247,6 +250,7 @@
         flex-wrap: wrap;
         gap: 5px;
         font-family: "Inter", sans-serif;
+        padding-bottom: 0px;
     }
 
     .design {
@@ -262,7 +266,8 @@
     /* ai-section css */
 
     .ai-section {
-        margin-top: 60px;
+        margin-top: 0px !important;
+        padding-top: 60px !important;
     }
 
     .bg-gray {
@@ -290,7 +295,7 @@
     /* contribution-section css */
 
     .contribution-section {
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     .contribution-section .container {
