@@ -40,6 +40,7 @@
     position: relative;
     z-index: 100;
     padding-bottom: 100px;
+    border-top: 1px #CCCCCC solid;
 }
 
 .all-items .all-items-data {
