@@ -478,6 +478,15 @@ header.sticky ul li a {
 
     .blog-banner-section {
         margin-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .blog-banner-section .card .card-body {
+        padding: 0px !important;
+    }
+
+    .blog-banner-section .card {
+        padding-bottom: 30px;
     }
 
     .blog-banner-section .banner-img {
