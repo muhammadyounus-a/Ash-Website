@@ -17,6 +17,11 @@ body {
     display: none;
 }
 
+.logo-web {
+    height: 100%;
+    width: 120px;
+}
+
 .banner-section {
     position: relative;
     padding: 10px 0px;
