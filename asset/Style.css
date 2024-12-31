@@ -34,6 +34,10 @@
 
 /* all-items css */
 
+.all-items-data-phone {
+    display: none;
+}
+
 .all-items {
     padding-top: 50px;
     background-color: #fff;
@@ -600,18 +604,7 @@
         padding: 40px 10px;
     }
 
-    .all-items .filter-btn button {
-        color: rgba(0, 0, 0, 0.90); 
-        font-size: 12px; 
-        font-family: "Inter", sans-serif; 
-        font-weight: 400;
-        padding: 10px 0px 8px 0px;
-        background: #F8F8F8; 
-        border: 1px solid rgba(0, 0, 0, 0.10);
-        width: 80px;
-    }
-
-    .nav-items {
+    .all-items-data-phone .nav-items {
         position: relative;
         display: flex;
         align-items: center;
@@ -620,25 +613,27 @@
         overflow-y: hidden;
         width: 100%;
         white-space: nowrap;
-        margin-left: 10px;
     }
 
-    .nav-items::-webkit-scrollbar {
+    .all-items-data-phone .nav-items::-webkit-scrollbar {
         display: none;
     }
 
-    .all-items .nav-items ul li {
-        margin: 0 10px;
-        color: black;
-        font-size: 14px; 
-        font-family: "Inter", sans-serif; 
-        font-weight: 400; 
-        text-transform: uppercase;
-        position: relative;
+    .all-items-data {
+        display: none !important;
     }
 
-    .dropdown button {
-        display: none;
+    .all-items-data-phone{
+        display: block;
+    }
+
+    .all-items-data-phone .nav-items {
+        margin-top: 20px;
+    }
+
+    .all-items-data-phone .dropdown button {
+        font-size: 12px !important;
+        padding: 5px !important;
     }
 
     /* uiUx-section css */
@@ -663,7 +658,31 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 140px;
+        height: 120px;
+    }
+
+    .section .items-child-img {
+        background-color: #F0F0F0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    .section .items-child-img img {
+        width: auto;
+        height: auto; 
+        max-width: 100%;
+        max-height: 100%;
+        padding: 15px;
+    }
+    
+    .section .items-child-datas {
+        padding: 10px 5px 0px 10px;
+        flex-grow: 1;
+        box-sizing: border-box;
+        width: 77%;
     }
 
     /* contribution-section css */
