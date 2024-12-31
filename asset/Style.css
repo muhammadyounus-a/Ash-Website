@@ -594,7 +594,17 @@
 @media all and (max-width:768px) {
     /* side bar */
     .sidebarNav {
-        display: none;
+        position: fixed;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: auto;
+        background: white;
+        border: 1px rgba(0, 0, 0, 0.10) solid;
+        font-size: 13px;
+        z-index: 3000;
+        font-weight: 500;
     }
 
     /* all-items css */
