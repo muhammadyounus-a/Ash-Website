@@ -20,8 +20,33 @@ closeMenu.addEventListener("click", () => {
 
 function setInputValue(button) {
     const inputBox = document.getElementById('resourceInput');
+    const actionButton = document.getElementById('actionButton');
     const buttonText = button.querySelector('p').textContent.trim();
+
+    // Set the input value
     inputBox.value = buttonText;
+
+    // Enable the button and change its color
+    actionButton.classList.remove('disabled');
+    actionButton.classList.add('enabled');
+    actionButton.disabled = false;
+}
+
+function handleInputChange() {
+    const inputBox = document.getElementById('resourceInput');
+    const actionButton = document.getElementById('actionButton');
+
+    if (inputBox.value.trim() === "") {
+        // Disable the button and make it semi-transparent
+        actionButton.classList.remove('enabled');
+        actionButton.classList.add('disabled');
+        actionButton.disabled = true;
+    } else {
+        // Enable the button and change its color
+        actionButton.classList.remove('disabled');
+        actionButton.classList.add('enabled');
+        actionButton.disabled = false;
+    }
 }
 
 // navitems underline changred 

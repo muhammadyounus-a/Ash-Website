@@ -40,6 +40,18 @@ a {
     height: 100%;
 }
 
+.input-box button.disabled {
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    cursor: not-allowed;
+}
+
+.input-box button.enabled {
+    opacity: 1;
+    background-color: black;
+    cursor: pointer;
+}
+
 /* Navbar section */
 
 header {

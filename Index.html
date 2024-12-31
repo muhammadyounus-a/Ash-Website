@@ -138,14 +138,14 @@
                             <i><img src="asset/image/home/arrow-up-right.svg" alt=""></i>
                         </button>
                         <button class="box-card" onclick="setInputValue(this)">
-                            <p>Suggest AI tools and tutorials to help graphic designers improve creativity and efficiency.</p>
+                            <p>Discover AI-powered design platforms for streamlined workflows.</p>
                             <i><img src="asset/image/home/arrow-up-right.svg" alt=""></i>
                         </button>
                         <div class="input-box">
-                            <input type="text" id="resourceInput" placeholder="Let AI find the best resources for you...">
-                            <button><img src="asset/image/arrow-right-solid.svg" alt=""></button>
+                            <input type="text" id="resourceInput" placeholder="Let AI find the best resources for you..." oninput="handleInputChange()">
+                            <button id="actionButton" class="disabled" disabled><img src="asset/image/arrow-right-solid.svg" alt=""></button>
                         </div>
-                    </div>
+                    </div>         
                 </div>
             </div>
         </section>
@@ -2805,8 +2805,8 @@
         <section class="ai-section">
             <div class="container">
                 <div class="row">
-                    <h5>AI OF MONTH</h5>
-                    <p class="mt-1">Discover the top AI tool of the month, carefully selected for its innovation and ability to enhance productivity, streamline workflows, and help you achieve your goals more efficiently.</p>
+                    <h5 class="p-0">AI OF MONTH</h5>
+                    <p class="mt-1 p-0">Discover the top AI tool of the month, carefully selected for its innovation and ability to enhance productivity, streamline workflows, and help you achieve your goals more efficiently.</p>
                     <div class="container">
                         <div class="row border-line">
                             <div class="col-lg-4 bg-gray">
