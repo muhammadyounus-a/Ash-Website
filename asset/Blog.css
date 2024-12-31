@@ -380,6 +380,10 @@ header.sticky ul li a {
     .blog-banner-section {
         margin-top: 150px;
     }
+
+    .blog-banner-section .card .card-body h3 {
+        font-size: 18px;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -487,6 +491,10 @@ header.sticky ul li a {
 
     .blog-banner-section .card {
         padding-bottom: 30px;
+    }
+
+    .blog-banner-section .card .card-body h3 {
+        font-size: 18px;
     }
 
     .blog-banner-section .banner-img {
