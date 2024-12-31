@@ -253,6 +253,10 @@
     color: #fff;
 }
 
+.contribution-section .container p {
+    color: #f0e8e8;
+}
+
 .getTeach-btn button {
     padding: 10px 30px;
     border: 0px;

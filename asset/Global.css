@@ -84,7 +84,7 @@ header .logo {
 }
 
 .logo img {
-    height: 50px;
+    height: 40px;
 }
 
 .nav__list {
@@ -504,7 +504,7 @@ input[type="text"]:focus {
     overflow-x: auto; 
     overflow-y: hidden; 
     width: 100%;
-    gap: 1rem; 
+    /* gap: 1rem;  */
     scroll-behavior: smooth;
     padding: 0;
 }
@@ -1139,12 +1139,10 @@ input[type="text"]:focus {
         flex-shrink: 0;
         width: 20rem;
         margin-top: 20px;
-        padding: 0px;
-        margin: 0px;
     }
 
     .blog-section-card .card .card-body {
-        padding: 15px;
+        padding: 15px 0px 15px 15px;
     }
     
     .blog-section-card::-webkit-scrollbar {
