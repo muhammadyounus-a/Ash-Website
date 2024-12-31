@@ -1040,7 +1040,6 @@ input[type="text"]:focus {
         line-height: 38px;
         text-transform: capitalize;
     }
-/* /////////////////// */
     
     .input-box input::placeholder{
         color: rgba(0, 0, 0, 0.70) !important; 
@@ -1088,8 +1087,17 @@ input[type="text"]:focus {
     .input-box input {
         background: #FEFEFE; 
         border: 1px #E4E4E7 solid;
-        padding: 15px 20px;
+        padding: 10px 20px;
         width: 100%;
+    }
+
+    .input-box button {
+        padding: 10px;
+        color: #fff;
+        border: 1px solid #000;
+        white-space: nowrap; 
+        font-size: 20px;
+        background: #030303;
     }
 
     /* newBlog-section css */
