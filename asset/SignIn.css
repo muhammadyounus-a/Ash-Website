@@ -29,7 +29,7 @@ body {
 
 .banner-section .heading {
     position: absolute;
-    bottom: 60px;
+    bottom: 100px;
     color: #fff;
     font-size: 50px;
     font-family: "Metrophobic", sans-serif;
@@ -38,7 +38,8 @@ body {
 }
 
 .banner-section .banner-img {
-    height: 97vh !important;
+    height: 95% !important;
+    width: 90% !important;
 }
 
 .datas-div {
@@ -232,7 +233,7 @@ body {
     
     .banner-section .banner-img {
         height: 15vh !important;
-        width: 100%;
+        width: 100% !important;
         margin-top: 30px;
     }
 
