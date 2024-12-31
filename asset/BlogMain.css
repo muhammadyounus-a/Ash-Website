@@ -520,16 +520,15 @@ header.sticky ul li a {
     .blogMain-banner-section .container h1 {
         color: #fff;
         font-weight: bold;
-        line-height: 38px;
+        line-height: 40px;
     }
 
     .blogMain-banner-section .container p {
         color: var(--paragraph);
         font-weight: 500;
-        line-height: 28px;
+        line-height: 25px;
         margin-top: 10px;
-        font-size: 18px;
-        text-align: justify;
+        font-size: 14px;
     }
 
     .blogMain-banner-section .business-img img {
@@ -541,8 +540,7 @@ header.sticky ul li a {
     .blogMain-banner-section ul {
         color: var(--paragraph);
         margin: 0;
-        font-size: 18px;
-        text-align: justify;
+        font-size: 14px;
         padding: 0px 20px 0px 30px;
     }
 
