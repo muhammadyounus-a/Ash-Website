@@ -40,11 +40,19 @@
     padding: 0px;
 }
 
-.tools-banner-section .all-items {
+/* .tools-banner-section .all-items {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     padding: 0px;
+} */
+
+.tools-banner-section .main-items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-top: 20px;
 }
 
 .tools-banner-section .items {
@@ -447,6 +455,31 @@
         width: 100%; 
     }
 
+    .tools-banner-section .main-items {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+    }
+    
+    .tools-banner-section .main-items::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tools-banner-section .items {
+        flex: 0 0 auto; /* Ensures the items maintain their defined width */
+        width: fit-content; /* Set the desired width for items */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px 5px 20px;
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+
     /* review section */ 
 
     .review-section {
@@ -594,7 +627,7 @@
 
     .tools-banner-section {
         margin-top: 20px;
-        padding: 60px 15px !important;
+        padding: 40px 15px !important;
     }
     
     .tools-banner-section .navigation-menu a {
@@ -628,6 +661,7 @@
     .tools-banner-section .heading {
         display: block;
         padding: 0px;
+        margin-top: -0px !important;
     }
 
     .tools-banner-section .heading p {
@@ -657,6 +691,10 @@
 
     .tools-banner-section p {
         font-size: 12px !important; 
+    }
+
+    .tools-banner-section .main-items {
+        margin-top: 0px;
     }
     
     /* review section */ 
