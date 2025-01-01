@@ -49,7 +49,7 @@
 
 .tools-banner-section .main-items {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     padding: 0px;
     margin-top: 20px;
@@ -656,11 +656,16 @@
     }
     
     .tools-banner-section .upload-btn {
-        padding: 8px 8px !important;  
+        padding: 0px !important;  
         border: 1px rgba(0, 0, 0, 0.30) solid;
         height: 50px !important;
         width: 18%;
         margin-top: 10px;
+    }
+
+    .tools-banner-section .upload-btn img {
+        height: 20px;
+        width: auto;
     }
     
     .tools-banner-section .heading {
@@ -738,11 +743,11 @@
     }
     
     .review-section .write-btn button{
-        padding: 10px 30px;  
+        padding: 8px 15px;  
         background-color: #030303;
         color: #fff;
         border: 0px;
-        height: 50px !important;
+        height: 40px !important;
     }
     
     .swiper-slide .card {
