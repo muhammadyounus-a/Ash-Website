@@ -9,10 +9,12 @@ const closeMenu = document.getElementById("close-menu");
 toggleMenu.addEventListener('click', () => {
     navMenu.classList.toggle('show');
     document.body.classList.toggle('overflow-hidden');
+    document.body.classList.toggle('nav-open');
 });
 closeMenu.addEventListener("click", () => {
     navMenu.classList.remove('show');
     document.body.classList.remove('overflow-hidden');
+    document.body.classList.remove('nav-open');
 });
 // navbar script end //////////////////
 

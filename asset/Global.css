@@ -52,6 +52,10 @@ a {
     cursor: pointer;
 }
 
+.nav-overlay {
+    display: none;
+}
+
 /* Navbar section */
 
 header {
@@ -757,6 +761,8 @@ input[type="text"]:focus {
         left: 40px;
         top: 30px;
         display: block;
+        height: 30px;
+        width: auto;
     }
 
     .nav {
@@ -766,17 +772,39 @@ input[type="text"]:focus {
         background-color: #fff;
         color: var(--paragraph);
         width: 100%;
-        height: 35vh;
+        height: 45vh;
         padding: 24px 0;
         z-index: 1000;
         transition: 0.5s;
         z-index: 1000;
     }
 
+    .nav-overlay {
+        display: block;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(189, 189, 189, 0.411);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 999; /* Make sure it covers everything except the nav */
+    }
+    
+    body.nav-open .nav-overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     header.sticky {
         padding: 30px 40px 30px 40px;
         background-color: #fff;
-        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+        box-shadow: 3px 4px 4px 0px hsla(0, 0%, 84%, 0.5);
     }
 
     header .logo {
@@ -955,7 +983,7 @@ input[type="text"]:focus {
     .header__close {
         position: absolute;
         right: 20px;
-        top: 15px;
+        top: 20px;
         display: block;
         font-size: 24px;
         border-radius: 50%;
@@ -968,6 +996,8 @@ input[type="text"]:focus {
         left: 20px;
         top: 30px;
         display: block;
+        height: 25px;
+        width: auto;
     }
 
     .nav__item a {
@@ -981,7 +1011,7 @@ input[type="text"]:focus {
         background-color: #ffffff;
         color: #000000ee;
         width: 100%;
-        height: 55vh;
+        height: 100vh;
         padding: 24px 0;
         z-index: 1000;
         transition: 0.5s;
