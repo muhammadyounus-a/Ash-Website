@@ -42,8 +42,9 @@ a {
 
 .input-box button.disabled {
     opacity: 0.5;
-    background-color: rgb(0, 0, 0);
+    background-color: #787878;
     cursor: not-allowed;
+    border: 0px;
 }
 
 .input-box button.enabled {
@@ -240,7 +241,7 @@ header.sticky ul li a {
     padding: 0px 25px;
     background-color: transparent;
     width: 100%; 
-    border: 1px #DADADA solid;
+    border: 1px 0px 1px 1px #DADADA solid;
     background: #FEFEFE;
 }
 
@@ -965,7 +966,7 @@ input[type="text"]:focus {
     }
 
     .logo img {
-        height: 30px;
+        height: 32px;
     }
 
     header {
@@ -1097,11 +1098,11 @@ input[type="text"]:focus {
         border: 1px #E4E4E7 solid;
         width: 100%;
         margin-bottom: 10px;
+        height: 65px;
     }
     
-    .box-card p span {
-        font-weight: 600;
-        color: #000;
+    .box-card p {
+        line-height: 20px;
     }
     
     .input-box {
@@ -1118,16 +1119,19 @@ input[type="text"]:focus {
     }
 
     .input-box input {
-        background: #FEFEFE; 
-        border: 1px #E4E4E7 solid;
+        background: #FEFEFE;
         padding: 10px 20px;
         width: 100%;
+        border-top: 1px #DADADA solid !important;
+        border-bottom: 1px #DADADA solid !important;
+        border-left: 1px #DADADA solid;
+        border-right: 0px #fff solid !important;
     }
 
     .input-box button {
         padding: 10px;
         color: #fff;
-        border: 1px solid #000;
+        border: 0px solid #000 !important;
         white-space: nowrap; 
         font-size: 20px;
         background: #030303;
@@ -1138,7 +1142,7 @@ input[type="text"]:focus {
     .newBlog-section {
         margin-top: 60px;
         background-color: #010102;
-        padding: 60px 0px 50px 0px;
+        padding: 30px 0px 50px 0px;
     }
     
     .articl-section {
@@ -1230,6 +1234,37 @@ input[type="text"]:focus {
     .popUp-datas {
         padding: 10px 10px;
     }
+
+    .popUp-datas input {
+        padding : 10px 10px 10px 10px !important;
+        font-weight: 300 !important;
+        font-size: 12px;
+    }
+
+    .dropdown-input-header {
+        padding: 10px !important;
+        font-weight: 300 !important;
+        font-size: 12px;
+    }
+
+    .dropdown-input-item span {
+        font-size: 12px !important;
+        font-weight: 300 !important;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: #333;
+    }
+    
 
     /* footer css */
 

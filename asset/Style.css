@@ -598,24 +598,14 @@
 @media all and (max-width:768px) {
     /* side bar */
     .sidebarNav {
-        position: fixed;
-        right: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: auto;
-        background: white;
-        border: 1px rgba(0, 0, 0, 0.10) solid;
-        font-size: 13px;
-        z-index: 3000;
-        font-weight: 500;
+        display: none !important;
     }
 
     /* all-items css */
 
     .all-items {
         margin-top: 0px;
-        padding: 30px 15px;
+        padding: 30px 15px 60px 15px;
     }
 
     .all-items-data-phone .nav-items {
@@ -693,10 +683,15 @@
     }
     
     .section .items-child-datas {
-        padding: 20px 5px 0px 10px;
+        padding: 20px 10px 0px 10px;
         flex-grow: 1;
         box-sizing: border-box;
         width: 77%;
+    }
+
+    .see-more button {
+        padding: 8px 20px; 
+        font-size: 14px;
     }
 
     /* contribution-section css */
@@ -719,22 +714,33 @@
         color: #fff;
     }
 
+    .contribution-section .container p {
+        color: #f0e8e8;
+        font-size: 14px;
+    }
+
+    .getTeach-btn button {
+        margin-top: -5px !important;
+    }
+
     /* ai-section css */
 
     .ai-section {
         margin-top: 60px;
-        padding: 40px 15px;
+        padding: 60px 15px;
     }
 
     .bg-gray {
-        background-color: rgba(0, 0, 0, 0.04);
+        background-image: url('image/Blog/card-img-1.webp');
+        background-position: center;
+        background-size: cover;
         padding: 30px 0px;
         height: 25vh;
     }
 
     .bg-team {
         background-color: #F8F8F8;
-        padding: 40px 10px;
+        padding: 30px 10px 15px 10px;
     } 
 
     .hashTags {
