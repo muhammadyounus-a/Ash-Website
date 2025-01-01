@@ -625,6 +625,11 @@
 
     /* banner section css */
 
+    .DocuSign-img img {
+        height: 75px !important;
+        width: auto !important;
+    }
+
     .tools-banner-section {
         margin-top: 20px;
         padding: 40px 15px !important;
@@ -646,15 +651,15 @@
         color: #fff;
         border: 0px;
         height: 50px !important;
-        width: 80%;
+        width: 82%;
         margin-top: 10px;
     }
     
     .tools-banner-section .upload-btn {
-        padding: 8px 15px;  
+        padding: 8px 8px !important;  
         border: 1px rgba(0, 0, 0, 0.30) solid;
         height: 50px !important;
-        width: 20%;
+        width: 18%;
         margin-top: 10px;
     }
     
@@ -705,10 +710,10 @@
     }
     
     .review-section h6 {
-        color: rgba(0, 0, 0, 0.90); 
+        color: #383838; 
         font-size: 20px; 
         font-family: "Metrophobic", sans-serif; 
-        font-weight: 500; 
+        font-weight: 400; 
         text-transform: uppercase;
     }
     
@@ -749,7 +754,7 @@
     
     .swiper {
         width: 100%;
-        height: 300px;
+        height: 270px;
         padding: 0px !important;
     }
     
@@ -758,8 +763,8 @@
     }
     
     .swiper-pagination-bullet {
-        height: 10px !important;
-        width: 10px !important;
+        height: 6px !important;
+        width: 6px !important;
         border-radius: 0px !important;
     }
     
@@ -782,15 +787,15 @@
     /* similarTools-section css */
     
     .similarTools-section {
-        margin-top: 60px;
+        margin-top: 20px;
         padding: 0px 15px;
     }
     
     .similarTools-section h2 {
-        color: rgba(0, 0, 0, 0.80); 
+        color: rgb(65, 64, 64); 
         font-size: 24px; 
         font-family: "Metrophobic", sans-serif; 
-        font-weight: 500; 
+        font-weight: 400; 
         text-transform: uppercase;
         padding: 0px;
     }
@@ -815,38 +820,39 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 140px;
+        height: 120px;
     }
     
     .items-child-datas {
-        padding: 15px 15px 5px 15px;
+        padding: 20px 10px 0px 10px;
     }
     
     .items-child-img {
         background-color: #F0F0F0;
-        padding: 10px 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 220px; 
-        height: 100%;
+        box-sizing: border-box;
+        padding: 15px;
     }
     
     .items-child-img img {
-        width: 72px; 
-        height: 70px;
+        width: auto;
+        height: auto; 
+        max-width: 100%;
+        max-height: 100%;
     }
     
     .items-child h4 {
         color: rgba(0, 0, 0, 0.90); 
-        font-size: 18px; 
+        font-size: 14px; 
         font-family: "Inter", sans-serif; 
         font-weight: 500;
     }
     
     .items-child h6 {
         color: rgba(0, 0, 0, 0.70); 
-        font-size: 14px; 
+        font-size: 12px; 
         font-family: "Inter", sans-serif; 
         font-weight: 400;
     }
@@ -855,6 +861,7 @@
         color: rgba(0, 0, 0, 0.50);
         font-family: "Inter", sans-serif; 
         font-weight: 400;
+        font-size: 12px;
     }
     
     .seeMore-btn {
@@ -874,19 +881,21 @@
     /* ai-section css */
 
     .ai-section {
-        margin-top: 60px;
-        padding: 0px 15px !important;
+        margin-top: 0px !important;
+        padding: 60px 15px;
     }
 
     .bg-gray {
-        background-color: rgba(0, 0, 0, 0.04);
+        background-image: url('image/Blog/card-img-1.webp');
+        background-position: center;
+        background-size: cover;
         padding: 30px 0px;
         height: 25vh;
     }
 
     .bg-team {
         background-color: #F8F8F8;
-        padding: 40px 10px;
+        padding: 30px 10px 15px 10px;
     } 
 
     .hashTags {
@@ -903,7 +912,14 @@
     /* contribution-section css */
 
     .contribution-section {
+        margin-top: 0px !important;
+    }
+
+     /* contribution-section css */
+
+     .contribution-section {
         margin-top: 60px;
+        /* padding: 0px 10px; */
     }
 
     .contribution-section .container {
@@ -917,5 +933,14 @@
         align-items: center;
         justify-content: center;
         color: #fff;
+    }
+
+    .contribution-section .container p {
+        color: #f0e8e8;
+        font-size: 14px;
+    }
+
+    .getTeach-btn button {
+        margin-top: -5px !important;
     }
 }
