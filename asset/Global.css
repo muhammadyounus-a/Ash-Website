@@ -1023,8 +1023,8 @@ input[type="text"]:focus {
     .nav__list {
         display: flex;
         flex-direction: column;
-        margin-left: 15%;
-        padding: 0px 10px !important;
+        justify-content: flex-start !important;
+        padding: 60px 10px 0px 10px !important;
     }
 
     .show {
