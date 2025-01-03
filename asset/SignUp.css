@@ -1,240 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Inter:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: "Metrophobic", sans-serif;
+    font-family: 'Metrophobic', sans-serif;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
 }
 
-.logo-tab {
+.banner-section {
+    color: #fff;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.banner-img-tab {
     display: none;
 }
 
-.logo-web {
-    height: 100%;
-    width: 120px;
+.banner-img {
+    max-width: 90%;
+    height: auto;
 }
 
-.banner-section {
-    position: relative;
-    padding: 10px 0px 10px 0px;
-    height: fit-content;
-}
-
-.banner-section .heading {
+.banner-section h2 {
     position: absolute;
-    bottom: 100px;
-    color: #fff;
-    font-size: 50px;
-    font-family: "Metrophobic", sans-serif;
+    bottom: 10%;
+    font-size: 35px; 
+    font-family: 'Metrophobic', sans-serif; 
     font-weight: 400;
-    left: 60px;
+    line-height: 50px;
 }
 
-.banner-section .banner-img {
-    height: 95% !important;
-    width: 90% !important;
-}
-
-.datas-div {
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
-}
-
-.datas-div h1 {
-    color: #030303; 
-    font-size: 38px; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 500;
-}
-
-.datas-div p {
-    color: #666666; 
-    font-size: 20px; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 400;
-}
-
-.input-area label {
-    color: rgba(0, 0, 0, 0.90); 
-    font-size: 18px; 
-    font-family: "Metrophobic", sans-serif; 
-    font-weight: 400;
-}
-
-.input-area input {
+form input {
+    width: 100%;
     border: 1px #E4E4E4 solid;
-    border-radius: 0px;
-    outline: 1px #E4E4E4 solid !important;
-    padding: 13px;
-    width: 100% !important;
+    padding: 10px 10px;
 }
 
-.input-area input::placeholder {
+input::placeholder {
     color: #B3B3B3; 
-}
-
-.input-area input:focus {
-    outline: 1px #E4E4E4 solid !important;
-}
-
-.checkbox-input {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Add space between the checkbox and text */
-}
-
-.checkbox-input input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    background-color: #E9E9E9;
-    border: 2px solid #ccc; /* Add a border for better visibility */
-    border-radius: 4px; /* Optional: Make the checkbox slightly rounded */
-    appearance: none; /* Remove default styling for custom design */
-    cursor: pointer;
-}
-
-.checkbox-input input[type="checkbox"]:checked {
-    background-color: rgb(127, 127, 255); /* Change color when checked */
-    border-color: rgb(127, 127, 255);
-}
-
-.checkbox-input input[type="checkbox"]:checked::after {
-    content: '✓'; /* Add a checkmark */
-    display: block;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    line-height: 22px; /* Center checkmark inside the checkbox */
-}
-
-.checkbox-input p {
-    margin: 0; /* Remove any default margin */
-    color: #1A1A1A;
-    font-size: 15px;
-    font-family: "Metrophobic", sans-serif;
+    font-size: 15px; 
+    font-family: "Inter", sans-serif; 
     font-weight: 400;
-    line-height: 1.5; /* Improve readability */
-    cursor: pointer; /* Make the label clickable */
 }
 
-.signUp-btn button {
-    background-color: #030303;
-    color: #fff;
-    width: 100% !important;
-    border: 0px;
-    padding: 15px 0px;
-}
-
-.line-area {
+.forget-pass {
+    color: #1A1A1A; 
+    font-size: 16px; 
+    font-family: 'Metrophobic', sans-serif;
+    text-decoration: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-top: 10px;
 }
 
-.line-area h5 {
-    font-size: 16px;
-    margin-top: 8px;
+input:focus {
+    outline: none !important;
 }
 
-.line {
-    width: 34%;
-    background-color: rgba(0, 0, 0, 0.40);
-    height: 1px;
+form label {
+    color: #1A1A1A !important; 
+    font-size: 18px !important; 
+    font-family: 'Metrophobic', sans-serif !important; 
+    font-weight: 400;
 }
 
-.signGoogle-btn button {
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.54);
-    width: 100% !important;
-    border: 1px rgba(0, 0, 0, 0.10) solid;
-    padding: 15px 0px;
-}
-
-.already-text {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.already-text p {
+form p {
     color: rgba(0, 0, 0, 0.70); 
     font-size: 16px; 
     font-family: "Inter", sans-serif; 
     font-weight: 400;
+    text-align: center;
 }
 
-.already-text p span a {
-    text-decoration: none;
-    color: black; 
+form p a {
+    color: black;
     font-size: 16px; 
     font-family: "Inter", sans-serif; 
     font-weight: 400;
+    text-decoration: none;
 }
 
-/* media query starting */
+.logo-img {
+    height: 40px;
+}
 
-@media all and (max-width:900px) {
+.banner-datas h1 {
+    color: #030303; 
+    font-size: 38px; 
+    font-family: 'Metrophobic', sans-serif; 
+    font-weight: 500;
+}
 
-    .logo-tab {
+.banner-datas p {
+    color: #666666; 
+    font-size: 20px; 
+    font-family: 'Metrophobic', sans-serif; 
+    font-weight: 400;
+}
+
+.sign-btn {
+    width: 100%;
+    border: 1px #030303 solid;
+    padding: 10px 10px;
+    background-color: #030303;
+    color: #fff;
+}
+
+.sign-btn-google {
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.10) solid;
+    padding: 10px 10px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.54); 
+    font-size: 18px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+}
+
+.tab-section {
+    display: none;
+}
+
+.form-check {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.form-check label {
+    color: #1A1A1A !important;
+    font-size: 15px !important; 
+    font-family: 'Metrophobic', sans-serif !important; 
+    font-weight: 400 !important;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .banner-section {
+        color: #fff;
+        height: auto;
+        padding: 0px;
+        position: relative;
+    }
+    
+    .banner-img ,.web-section{
+        display: none;
+    }
+
+    .banner-img-tab {
         display: block;
-        height: 70px !important;
-        width: 100px !important;
+        width: 100%;
+        height: 15vh;
     }
 
-    .logo-web {
-        display: none;
-    }
-    
-    .banner-section .heading {
-        display: none;
-    }
-    
-    .banner-section .banner-img {
-        height: 15vh !important;
-        width: 100% !important;
-    }
-    
-    .datas-div {
-        height: 100%;
+    .tab-section {
         display: flex;
+        height: 100vh;
         align-items: center;
-        justify-content: center;
+    }
+    
+    .banner-section h2 {
+        display: none;
     }
 }
 
-@media all and (max-width:768px) {
+@media (max-width: 768px) {
+    .tab-section {
+        display: flex;
+        height: auto;
+        padding: 30px 0px;
+    }
 
-    .banner-section .banner-img {
-        height: 23vh !important;
+    form input {
         width: 100%;
+        border: 1px #E4E4E4 solid;
+        padding: 10px 10px;
     }
-
-    .datas-div {
-        padding: 10px 15px;
+    
+    input::placeholder {
+        color: #B3B3B3; 
+        font-size: 14px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
     }
-
-    .datas-div p {
+    
+    .forget-pass {
+        color: #1A1A1A; 
+        font-size: 14px; 
+        font-family: 'Metrophobic', sans-serif;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    
+    form label {
+        color: #1A1A1A !important; 
+        font-size: 14px !important; 
+        font-family: 'Metrophobic', sans-serif !important; 
+        font-weight: 400;
+    }
+    
+    .logo-head h5 a {
+        text-decoration: none;
+        color: #1A1A1A; 
+        font-size: 14px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 500;
+    }
+    
+    .logo-head img {
+        height: 30px;
+    }
+    
+    .banner-datas h1 {
+        color: #030303; 
+        font-size: 28px; 
+        font-family: 'Metrophobic', sans-serif; 
+        font-weight: 500;
+        margin-top: 10px !important;
+    }
+    
+    .banner-datas p {
         color: #666666; 
         font-size: 14px; 
-        font-family: "Metrophobic", sans-serif; 
+        font-family: 'Metrophobic', sans-serif; 
         font-weight: 400;
     }
 
-    .checkbox-input {
-        display: none;
-    }
-
-    .line-area h5 {
-        font-size: 10px;
-        margin-top: 8px;
+    .form-check label {
+        color: #1A1A1A !important;
+        font-size: 10px !important; 
+        font-family: 'Metrophobic', sans-serif !important; 
+        font-weight: 400 !important;
     }
 }
