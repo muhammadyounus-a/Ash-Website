@@ -117,40 +117,40 @@
                 <div class="row">
                     <div class="main-categories">
                         <div class="categories">
-                            Design & Creativity
+                            <button>Design & Creativity</button>
                         </div>
                         <div class="categories">
-                            Business & Marketing
+                            <button>Business & Marketing</button>
                         </div>
                         <div class="categories">
-                            Technology & Development
+                            <button>Technology & Development</button>
                         </div>
                         <div class="categories">
-                             Education & Learning
+                            <button> Education & Learning</button>
                         </div>
                         <div class="categories">
-                            Entertainment & Media
+                            <button>Entertainment & Media</button>
                         </div>
                         <div class="categories">
-                            Entertainment & Media
+                            <button>Entertainment & Media</button>
                         </div>
                         <div class="categories">
-                            Health & Wellness
+                            <button>Health & Wellness</button>
                         </div>
                         <div class="categories">
-                            Finance & Investment
+                            <button>Finance & Investment</button>
                         </div>
                         <div class="categories">
-                            Lifestyle & Personal Growth
+                            <button>Lifestyle & Personal Growth</button>
                         </div>
                         <div class="categories">
-                            Lifestyle & Personal Growth
+                            <button>Lifestyle & Personal Growth</button>
                         </div>
                         <div class="categories">
-                            Finance & Investment
+                            <button>Finance & Investment</button>
                         </div>
                         <div class="categories">
-                            Finance & Investment
+                            <button>Finance & Investment</button>
                         </div>
                     </div>
                     <hr class="mt-5">
@@ -443,6 +443,17 @@
         });
 
         observer.observe(container);
+
+        // button class added
+        document.querySelectorAll('.categories button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove the 'active' class from all buttons
+                document.querySelectorAll('.categories button').forEach(btn => btn.classList.remove('active'));
+                
+                // Add the 'active' class to the clicked button
+                button.classList.add('active');
+            });
+        });
       </script>
 </body>
 

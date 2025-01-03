@@ -16,15 +16,17 @@
     font-family: "Inter", sans-serif;
 }
 
-.categories {
+.categories button {
+    background-color: transparent;
     border: 1px solid #CCCCCC;
     padding: 10px 15px;
     border-radius: 0px;
     transition: 0.3s;
 }
 
-.categories:hover {
+.categories button.active {
     background-color: #000;
+    border: 1px solid #000000;
     color: #fff;
     transform: 0.3s;
 }
@@ -241,7 +243,7 @@
         font-family: "Inter", sans-serif;
     }
 
-    .categories {
+    .categories button{
         border: 1px solid #CCCCCC;
         padding: 5px 7px;
         border-radius: 0px;
@@ -281,19 +283,21 @@
     /* ai-section css */
 
     .ai-section {
-        margin-top: 0px !important;
-        padding: 60px 15px 60px 15px !important;
+        margin-top: 0px;
+        padding: 60px 15px;
     }
 
     .bg-gray {
-        background-color: rgba(0, 0, 0, 0.04);
+        background-image: url('image/Blog/card-img-1.webp');
+        background-position: center;
+        background-size: cover;
         padding: 30px 0px;
         height: 25vh;
     }
 
     .bg-team {
         background-color: #F8F8F8;
-        padding: 40px 10px;
+        padding: 30px 10px 15px 10px;
     } 
 
     .hashTags {
@@ -311,6 +315,7 @@
 
     .contribution-section {
         margin-top: 0px;
+        /* padding: 0px 10px; */
     }
 
     .contribution-section .container {
@@ -324,5 +329,14 @@
         align-items: center;
         justify-content: center;
         color: #fff;
+    }
+
+    .contribution-section .container p {
+        color: #f0e8e8;
+        font-size: 14px;
+    }
+
+    .getTeach-btn button {
+        margin-top: -5px !important;
     }
 }
