@@ -88,6 +88,16 @@
         padding: 0px !important;
     }
 
+    .feature-banner-section .container .card h3 {
+        color: #000;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .feature-banner-section .container .card p {
+        font-size: 14px;
+    }
+
     /* newBlog-section css */
 
     .newBlog-section {
