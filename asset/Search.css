@@ -621,11 +621,22 @@
         height: 115px !important;
     }
 
+    .section .items-child-datas {
+        padding: 20px 10px 1px 10px;
+        flex-grow: 1;
+        box-sizing: border-box;
+        width: 77%;
+    }
+
+    .section .items-child-datas p {
+        font-size: 12px;
+    }
+
     /* contribution-section css */
 
     .contribution-section {
         margin-top: 0px;
-        
+        /* padding: 0px 10px; */
     }
 
     .contribution-section .container {
@@ -639,5 +650,14 @@
         align-items: center;
         justify-content: center;
         color: #fff;
+    }
+
+    .contribution-section .container p {
+        color: #f0e8e8;
+        font-size: 14px;
+    }
+
+    .getTeach-btn button {
+        margin-top: -5px !important;
     }
 }
