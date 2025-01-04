@@ -632,9 +632,9 @@ input[type="text"]:focus {
 
 /* media query starting */
 
-@media all and (min-width:1300px) { 
+@media all and (min-width:1440px) { 
     .container {
-        max-width: 1600px !important;
+        max-width: 1400px !important;
     }
 }
 
