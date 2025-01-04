@@ -634,11 +634,21 @@ input[type="text"]:focus {
 
 @media all and (min-width:1440px) { 
     .container {
+        max-width: 1600px !important;
+    }
+}
+
+@media all and (max-width:1440px) { 
+    .container {
         max-width: 1400px !important;
     }
 }
 
 @media all and (max-width:1040px) { 
+
+    .container {
+        max-width: 1000px !important;
+    }
     
     .logo img {
         height: 45px;
