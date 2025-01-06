@@ -632,7 +632,7 @@ input[type="text"]:focus {
 
 /* media query starting */
 
-@media all and (min-width:1440px) { 
+/* @media all and (min-width:1440px) { 
     .container {
         max-width: 1600px !important;
     }
@@ -642,13 +642,13 @@ input[type="text"]:focus {
     .container {
         max-width: 1400px !important;
     }
-}
+} */
 
 @media all and (max-width:1040px) { 
 
-    .container {
+    /* .container {
         max-width: 1000px !important;
-    }
+    } */
     
     .logo img {
         height: 45px;
