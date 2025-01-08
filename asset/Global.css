@@ -254,7 +254,7 @@ header.sticky ul li a {
 .input-box button {
     padding: 15px;
     color: #fff;
-    border: 1px solid #000;
+    border: 0px solid #000;
     white-space: nowrap; 
     font-size: 20px;
     background: #030303;
@@ -632,23 +632,13 @@ input[type="text"]:focus {
 
 /* media query starting */
 
-/* @media all and (min-width:1440px) { 
+@media all and (min-width:1760px) { 
     .container {
         max-width: 1600px !important;
     }
 }
 
-@media all and (max-width:1440px) { 
-    .container {
-        max-width: 1400px !important;
-    }
-} */
-
 @media all and (max-width:1040px) { 
-
-    /* .container {
-        max-width: 1000px !important;
-    } */
     
     .logo img {
         height: 45px;
