@@ -681,6 +681,14 @@ input[type="text"]:focus {
         text-transform: uppercase;
         font-size: 12px;
     }
+
+    .box-card {
+        width: 47% !important;
+    }
+
+    .input-box {
+        width: 100% !important;
+    }
 }
 
 @media all and (max-width:990px) {
@@ -1096,7 +1104,7 @@ input[type="text"]:focus {
         padding: 10px 15px 0px 15px !important;
         background: #FEFEFE; 
         border: 1px #E4E4E7 solid;
-        width: 100%;
+        width: 90% !important;
         margin-bottom: 10px;
         height: 65px;
     }

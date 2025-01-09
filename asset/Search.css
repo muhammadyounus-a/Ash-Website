@@ -323,6 +323,42 @@
     font-weight: 300;
 }
 
+@media all and (max-width:1024px) {
+    .section .items-child h4 {
+        color: rgba(0, 0, 0, 0.90);
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+    }
+
+    .section .premium {
+        padding: 2px 5px;
+        background-color: #F0F0F0;
+    }
+
+    .section .items-child h6 {
+        color: rgba(0, 0, 0, 0.70);
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+
+    .section .items-child p {
+        color: rgba(0, 0, 0, 0.70);
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+
+    .section .items-child-img img { 
+        padding: 0px !important;
+    }
+
+    .section .items-child-img {
+        width: 30% !important;
+    }
+}
+
 @media all and (max-width:900px) {
 
     /* banner section css */
