@@ -10,8 +10,12 @@ body {
 .banner-section {
     color: #fff;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
     position: relative;
+}
+
+.web-section {
+    margin-top: 0px;
 }
 
 .banner-img-tab {
@@ -25,7 +29,7 @@ body {
 
 .banner-section h2 {
     position: absolute;
-    bottom: 130px;
+    bottom: 100px;
     font-size: 35px; 
     font-family: 'Metrophobic', sans-serif; 
     font-weight: 400;
