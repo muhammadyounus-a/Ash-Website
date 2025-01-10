@@ -78,12 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // popUp code
 function popUp() {
     document.getElementById('popup').style.display = 'flex';
-    document.body.classList.add('no-scroll'); // Disable scrolling
 }
 
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
-    document.body.classList.remove('no-scroll'); // Re-enable scrolling
 }
 
 function toggleDropdown() {

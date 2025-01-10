@@ -34,13 +34,13 @@
                     <li class="nav__item"><a href="Categories.html" class="nav__link">categories</a></li>
                     <li class="nav__item"><a href="Features.html" class="nav__link">Features</a></li>
                     <li class="nav__item"><a href="Blog.html" class="nav__link">Blog</a></li>
-                    <a href="#"><button onclick="popUp()" class="Contribute-btn-tab"><i class="fa fa-plus"></i> Contribute</button></a>
+                    <button type="button" onclick="popUp()" class="Contribute-btn-tab"><i class="fa fa-plus"></i> Contribute</button>
                 </ul>
             </nav>
             <div class="nav-overlay"></div>
             <div class="navBtn">
                 <a href="SignUp.html"><button class="signUp-btn">Sign up</button></a>
-                <a href="#"><button onclick="popUp()" class="Contribute-btn"><i class="fa fa-plus"></i> Contribute</button></a>
+                <button type="button" onclick="popUp()" class="Contribute-btn"><i class="fa fa-plus"></i> Contribute</button>
             </div>
             <ion-icon name="menu" class="header__toggle" id="toggle-menu"></ion-icon>
         </header>
@@ -212,7 +212,7 @@
                             <p style=" color: black;">128 reviews</p>
                         </div>
                         <div class="write-btn">
-                            <button onclick="rating()"><i class="fa-solid fa-pen me-2"></i> Write Review</button>
+                            <button type="button" onclick="rating()"><i class="fa-solid fa-pen me-2"></i> Write Review</button>
                         </div>
                         <div id="popup1" class="popup1-overlay">
                             <div class="popup1-content">
@@ -508,7 +508,7 @@
                     <h2>Contribute to WebSeek</h2>
                     <p>Help us grow by adding your favorite AI tools, websites, and YouTube videos. Share resources<br> that empower professionals worldwide.</p>
                     <div class="getTeach-btn mt-4">
-                        <button onclick="popUp()" class="contribution-btn"><i class="fa fa-plus"></i> You Can ADD</button>
+                        <button type="button" onclick="popUp(event)" class="contribution-btn"><i class="fa fa-plus"></i> You Can ADD</button>
                     </div>
                 </div>
             </div>
@@ -591,17 +591,15 @@
                 },
             },
         });
-
+        
         // popup code
 
         function rating() {
             document.getElementById('popup1').style.display = 'flex';
-            document.body.classList.add('no-scroll'); // Disable scrolling
         }
 
         function closeRating() {
             document.getElementById('popup1').style.display = 'none';
-            document.body.classList.remove('no-scroll'); // Re-enable scrolling
         }
     </script>
      <!-- footer icon -->
