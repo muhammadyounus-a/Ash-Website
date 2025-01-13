@@ -122,6 +122,22 @@ form label {
 
 /* Responsive Design */
 
+@media (min-width: 1440px) { 
+    .banner-img {
+        max-width: 94% !important;
+        height: auto;
+    }
+
+    .banner-section h2 {
+        position: absolute;
+        bottom: 100px;
+        font-size: 35px; 
+        font-family: 'Metrophobic', sans-serif; 
+        font-weight: 400;
+        line-height: 50px;
+    }
+}
+
 @media (max-width: 1440px) { 
     .banner-img {
         max-width: 80% !important;
