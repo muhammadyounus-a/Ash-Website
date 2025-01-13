@@ -630,6 +630,10 @@ input[type="text"]:focus {
     text-transform: uppercase;
 }
 
+.phone-copyright{
+    display: none;
+}
+
 /* media query starting */
 
 @media all and (min-width:1760px) { 
@@ -1344,7 +1348,7 @@ input[type="text"]:focus {
 
     .copyright-button {
         display: flex;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .copyright p {
@@ -1365,5 +1369,15 @@ input[type="text"]:focus {
         font-family: "Metrophobic", sans-serif; 
         font-weight: 400; 
         text-transform: uppercase;
+    }
+
+    .tab-copyright{
+        display: none;
+    }
+
+    .phone-copyright{
+        display: block;
+        margin-top: 30px;
+        margin-left: 10px;
     }
 }
