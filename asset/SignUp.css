@@ -146,6 +146,16 @@ form p a {
 
 /* Responsive Design */
 
+@media (min-width: 1800px) {
+    .banner-img {
+        height: auto !important;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}
+
 @media (max-width: 1440px) {
     .main-section {
         height: 105vh;
