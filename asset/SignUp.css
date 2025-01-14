@@ -7,15 +7,11 @@ body {
     overflow-x: hidden;
 }
 
-.banner-section {
-    color: #fff;
-    height: 100%;
-    padding: 40px;
-    position: relative;
-}
-
-.web-section {
-    margin-top: 0px;
+.main-section {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .banner-img-tab {
@@ -23,17 +19,25 @@ body {
 }
 
 .banner-img {
-    max-width: 90%;
-    height: auto;
+    height: 97vh !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.banner-section h2 {
+.banner-img h2 {
     position: absolute;
-    bottom: 100px;
-    font-size: 35px; 
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: 40px; 
     font-family: 'Metrophobic', sans-serif; 
     font-weight: 400;
-    line-height: 50px;
+}
+
+.banner-img img {
+    max-width: 93%;
 }
 
 form input {
@@ -123,10 +127,6 @@ form p a {
     font-weight: 500;
 }
 
-.tab-section {
-    display: none;
-}
-
 .form-check-input:checked {
     background-color: #000000 !important;
     border-color: #000000 !important;
@@ -146,152 +146,102 @@ form p a {
 
 /* Responsive Design */
 
-@media (min-width: 1440px) {
-    .banner-section {
-        margin-top: 0px;
-    }
-
-    .banner-datas {
-        height: 100vh;
-    }
-
-    .banner-section h2 {
-        position: absolute;
-        bottom: 50px;
-        font-size: 35px; 
-        font-family: 'Metrophobic', sans-serif; 
-        font-weight: 400;
-        line-height: 50px;
-    }
-}
-
 @media (max-width: 1440px) {
-    .banner-section {
-        margin-top: 40px;
+    .main-section {
+        height: 105vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
-
-    .banner-datas {
-        height: 110vh;
-    }
-
-    .banner-section h2 {
-        position: absolute;
-        bottom: 50px;
-        font-size: 35px; 
-        font-family: 'Metrophobic', sans-serif; 
-        font-weight: 400;
-        line-height: 50px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .banner-section {
-        margin-top: 0px !important;
-    }
-
-    .banner-datas {
-        height: 110vh;
-    }
-
+    
     .banner-img {
-        height: 100% !important;
-        max-width: 100% !important;
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-    }
-}
-
-@media (max-width: 900px) {
-    .banner-section {
-        color: #fff;
-        height: auto;
-        padding: 0px;
+        height: 100vh !important;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
         position: relative;
     }
     
-    .banner-img ,.web-section{
-        display: none;
+    .banner-img h2 {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        color: #fff;
+        font-size: 40px; 
+        font-family: 'Metrophobic', sans-serif; 
+        font-weight: 400;
+    }
+    
+    .banner-img img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-section {
+        height: 105vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    
+    .banner-img {
+        height: 102vh !important;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .banner-img h2 {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        color: #fff;
+        font-size: 30px; 
+        font-family: 'Metrophobic', sans-serif; 
+        font-weight: 400;
+    }
+    
+    .banner-img img {
+        max-width: 100%;
+        height: 102vh;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .main-section {
+        height: auto !important;
+        padding: 20px 0px;
     }
 
     .banner-img-tab {
         display: block;
-        width: 100%;
-        height: 15vh;
     }
 
-    .tab-section {
-        display: flex;
-        height: 100vh;
-        align-items: center;
+    .banner-img-tab .tab-banner-img {
+        height: 18vh;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-    
-    .banner-section h2 {
+
+    .logo-web img {
+        display: none !important;
+    }
+
+    .banner-img {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-    .tab-section {
-        display: flex;
-        height: auto;
-        padding: 50px 0px;
-    }
-
-    form input {
+    .banner-img-tab .tab-banner-img {
+        height: 15vh;
         width: 100%;
-        border: 1px #E4E4E4 solid;
-        padding: 10px 10px;
-    }
-    
-    input::placeholder {
-        color: #B3B3B3; 
-        font-size: 14px; 
-        font-family: "Inter", sans-serif; 
-        font-weight: 400;
-    }
-    
-    .forget-pass {
-        color: #1A1A1A; 
-        font-size: 14px; 
-        font-family: 'Metrophobic', sans-serif;
-        text-decoration: none;
-        display: flex;
-        justify-content: flex-end;
         margin-top: 10px;
-    }
-    
-    form label {
-        color: #1A1A1A !important; 
-        font-size: 14px !important; 
-        font-family: 'Metrophobic', sans-serif !important; 
-        font-weight: 400;
-    }
-    
-    .logo-head h5 a {
-        text-decoration: none;
-        color: #1A1A1A; 
-        font-size: 14px; 
-        font-family: "Inter", sans-serif; 
-        font-weight: 500;
-    }
-    
-    .logo-head img {
-        height: 30px;
-    }
-    
-    .banner-datas h1 {
-        color: #030303; 
-        font-size: 28px; 
-        font-family: 'Metrophobic', sans-serif; 
-        font-weight: 500;
-        margin-top: 10px !important;
-    }
-    
-    .banner-datas p {
-        color: #666666; 
-        font-size: 14px; 
-        font-family: 'Metrophobic', sans-serif; 
-        font-weight: 400;
+        margin-bottom: 10px;
     }
 
     .form-check label {
@@ -299,10 +249,5 @@ form p a {
         font-size: 10px !important; 
         font-family: 'Metrophobic', sans-serif !important; 
         font-weight: 400 !important;
-    }
-
-    .form-check-input:checked {
-        background-color: #000000 !important;
-        border-color: #000000 !important;
     }
 }
