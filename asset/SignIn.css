@@ -18,12 +18,22 @@ body {
     display: none;
 }
 
+.logo-img {
+    height: 40px;
+}
+
 .banner-img {
     height: 97vh !important;
     overflow: hidden;
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.logo-web img {
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
 .banner-img h2 {
@@ -36,7 +46,7 @@ body {
     font-weight: 400;
 }
 
-.banner-img img {
+.banner-img .banner-img-img {
     max-width: 93%;
 }
 
@@ -74,10 +84,10 @@ form label {
     font-weight: 400;
 }
 
-.logo-head {
+/* .logo-head {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .logo-head h5 a {
     text-decoration: none;
@@ -162,7 +172,7 @@ form label {
         font-weight: 400;
     }
     
-    .banner-img img {
+    .banner-img .banner-img-img {
         max-width: 100%;
     }
 }
@@ -193,7 +203,7 @@ form label {
         font-weight: 400;
     }
     
-    .banner-img img {
+    .banner-img .banner-img-img {
         max-width: 100%;
         height: 102vh;
     }
